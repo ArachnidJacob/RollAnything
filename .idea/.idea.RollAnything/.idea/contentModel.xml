@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Jacob\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Jacob\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Jacob\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_RollAnything.1665864308.00" t="ExcludeRecursive" />
+    <e p="E:\Projects\RollAnything\RollAnything" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="HiearchyIcons.cs" t="Include" />
+          <e p="Inspector" t="Include">
+            <e p="RollTableEditor.cs" t="Include" />
+            <e p="SpawnableEntryPreview.cs" t="Include" />
+            <e p="TableHolderInspector.cs" t="Include" />
+          </e>
+          <e p="Window" t="Include">
+            <e p="RollTableWindow.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="RollTable" t="Include">
+            <e p="AllChecksTrue.cs" t="Include" />
+            <e p="Entry.cs" t="Include" />
+            <e p="GlobalTableLists.cs" t="Include" />
+            <e p="NullEntry.cs" t="Include" />
+            <e p="OrientCheck.cs" t="Include" />
+            <e p="RandomSpotFinder.cs" t="Include" />
+            <e p="RaycastCheck.cs" t="Include" />
+            <e p="SpawnCheck.cs" t="Include" />
+            <e p="SphereCheck.cs" t="Include" />
+            <e p="Table.cs" t="Include" />
+            <e p="TableHolder.cs" t="Include" />
+            <e p="Tags" t="Include">
+              <e p="DepthTag.cs" t="Include" />
+              <e p="InclusiveTag.cs" t="Include" />
+              <e p="Tag.cs" t="Include" />
+              <e p="ZoneTag.cs" t="Include" />
+            </e>
+          </e>
+          <e p="SerializableSystemType.cs" t="Include" />
+          <e p="SimpleCameraController.cs" t="Include" />
+          <e p="SpiderTools.cs" t="Include" />
+        </e>
+        <e p="TutorialInfo" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="RollAnything.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
