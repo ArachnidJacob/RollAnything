@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9ba66b7c27ca346a6013b7233e55b5, type: 3}
+  m_Name: asdsad
+  m_EditorClassIdentifier: 
+  _rollEntries:
+  - m_ID: 0
+    m_Name: Root
+    m_Depth: -1
+    objectToRoll: {fileID: 0}
+    weight: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropChance: 0
+    dropTimes: 0
+  - m_ID: 1
+    m_Name: Item 1
+    m_Depth: 0
+    objectToRoll: {fileID: 0}
+    weight: 321
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropChance: 12.56852
+    dropTimes: 0
+  - m_ID: 6
+    m_Name: Item 6
+    m_Depth: 1
+    objectToRoll: {fileID: 0}
+    weight: 123
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropChance: 4.8159747
+    dropTimes: 0
+  - m_ID: 2
+    m_Name: Item 2
+    m_Depth: 1
+    objectToRoll: {fileID: 0}
+    weight: 333
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropChance: 13.038371
+    dropTimes: 0
+  - m_ID: 3
+    m_Name: Item 3
+    m_Depth: 2
+    objectToRoll: {fileID: 0}
+    weight: 444
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropChance: 17.384495
+    dropTimes: 0
+  - m_ID: 4
+    m_Name: Item 4
+    m_Depth: 3
+    objectToRoll: {fileID: 0}
+    weight: 1222
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropChance: 47.846516
+    dropTimes: 0
+  - m_ID: 5
+    m_Name: Item 5
+    m_Depth: 4
+    objectToRoll: {fileID: 0}
+    weight: 111
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropChance: 4.3461237
+    dropTimes: 0

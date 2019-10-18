@@ -121,8 +121,7 @@ namespace RollAnything
     [CreateAssetMenu(fileName = "new rollTable", menuName = "Diluvion/RollTables/Roll Table")]
     public class Table : Entry
     {
-        [Space()] public bool rollBool;
-
+       
         public List<SerializableSystemType> containedTypes = new List<SerializableSystemType>();
 
         [Tooltip("Debug for the last rolled object ")]
@@ -136,21 +135,19 @@ namespace RollAnything
         [SerializeField] int _lastRoll;
         [SerializeField] int _totalWeight;
         [SerializeField] float _currentWeight;
-
-        [SerializeField] int minDanger;
         [SerializeField] int minValue;
 
 
         public List<TypeToggle> typeList = new List<TypeToggle>();
 
         /// <summary>
-        /// Sums the whole list of object's weight and stores it in the totalWeight;
+        /// Sums the whole list of object's m_Weight and stores it in the totalWeight;
         /// </summary>
         public void TotWeight()
         {
             List<TableEntry> filtered = TypeFilteredList(rollTable);
             _totalWeight = TotalWeight(filtered);
-            //Debug.Log("Setting total weight = " + totalWeight + "from " + filtered.Count + " objects");
+            //Debug.Log("Setting total m_Weight = " + totalWeight + "from " + filtered.Count + " objects");
         }
 
         /// <summary>
@@ -217,43 +214,7 @@ namespace RollAnything
         }
 
 
-        public void RemoveRoll(int index)
-        {
-            if (tableEntries.Count > index)
-                tableEntries.RemoveAt(index);
-            if (rollTable.Count > index)
-                rollTable.RemoveAt(index);
-            //  GetUniqueTypes();
-        }
-
-        /// <summary>
-        /// safely removes the entry and rollentry
-        /// </summary>   
-        List<TableEntry> _removeList = new List<TableEntry>();
-
-        public void StoreForRemoval(Entry e)
-        {
-            foreach (TableEntry te in rollTable)
-            {
-                if (te.HasEntry(e))
-                    _removeList.Add(te);
-            }
-        }
-
-        public void RemoveStored()
-        {
-            foreach (TableEntry te in _removeList)
-                rollTable.Remove(te);
-        }
-
-        public void RemoveRoll(Entry e)
-        {
-            if (e == null) return;
-            Debug.Log("Removing E " + e.name);
-            StoreForRemoval(e);
-            tableEntries.Remove(e);
-            RemoveStored();
-        }
+       
 
         public void RemoveRoll(TableEntry tee)
         {
@@ -273,22 +234,6 @@ namespace RollAnything
 
         #region table search and manipulation
 
-        /// <summary>
-        /// public Get for the RollTable
-        /// </summary>
-        /// <returns></returns>
-        public void ResizeTable()
-        {
-            //Debug.Log("Table Entry Count1 : " + tableEntries.Count);
-            tableEntries = tableEntries.Distinct().ToList(); //Removes duplicates
-            // Debug.Log("Table Entry Count2 : " + tableEntries.Count);
-            foreach (Entry e in tableEntries)
-            {
-                AddRoll(e);
-            }
-
-            GetUniqueTypes();
-        }
 
 
         //TODO YAGNI add an ContainsAssignable function similar to containstype
@@ -465,7 +410,7 @@ namespace RollAnything
             if (tableCatch != null)
             {
                 Debug.Log(e.name + "It was a table!", e);
-                // return tableCatch.Roll<T>(rollTable);
+                return tableCatch.Roll<T>(rollTable);
             }
 
 //            Debug.Log("returning entry: " + e, e);
@@ -493,7 +438,7 @@ namespace RollAnything
 
 
         /// <summary>
-        /// Main Roll Function, checks target list of RollObjects for weight, and rolls through to find an object
+        /// Main Roll Function, checks target list of RollObjects for m_Weight, and rolls through to find an object
         /// </summary>   
         Entry Roll<T>(List<TableEntry> drollObjects) where T : Entry
         {
@@ -627,6 +572,22 @@ namespace RollAnything
         {
             for (int i = 0; i < typeList.Count; i++)
                 typeList[i].toggled = false;
+        }
+        /// <summary>
+        /// public Get for the RollTable
+        /// </summary>
+        /// <returns></returns>
+        public void ResizeTable()
+        {
+            //Debug.Log("Table Entry Count1 : " + tableEntries.Count);
+            tableEntries = tableEntries.Distinct().ToList(); //Removes duplicates
+            // Debug.Log("Table Entry Count2 : " + tableEntries.Count);
+            foreach (Entry e in tableEntries)
+            {
+                AddRoll(e);
+            }
+
+            GetUniqueTypes();
         }
 
 

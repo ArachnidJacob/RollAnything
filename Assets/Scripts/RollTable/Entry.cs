@@ -10,7 +10,7 @@ namespace RollAnything
     public class Entry : ScriptableObject
     {
         [Tooltip(
-            "The weight of the object, determines how often it can be rolled (Is relative to all weighted objects in the table it is in")]
+            "The m_Weight of the object, determines how often it can be rolled (Is relative to all weighted objects in the table it is in")]
         public int weight = 10;
 
 
