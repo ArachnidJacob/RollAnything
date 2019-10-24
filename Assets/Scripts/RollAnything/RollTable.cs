@@ -1,37 +1,94 @@
 ﻿using System;
-using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.IMGUI.Controls;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using Object = UnityEngine.Object;
+using Random = UnityEngine.Random;
 
 namespace RollAnything
 {
     [Serializable]
-    public class RollTable    
+    public class RollTable
     {
         [SerializeField] private List<RollEntry> _rollEntries = new List<RollEntry>();
 
-        public List<RollEntry> RollEntries
+        public bool expandedtable = false;
+        private int _lastRoll;
+        private int _currentWeight;
+
+        List<RollEntry> RollEntries
         {
             get
             {
                 if (_rollEntries.Count <= 0)
                 {
                     _rollEntries = new List<RollEntry>();
-                    _rollEntries.Add(new RollEntry("Root", -1, 0));
+                    _rollEntries.Add(new RollEntry(null, "Root", -1, 0,0));
                 }
                 return _rollEntries;
             }
             set { _rollEntries = value; }
         }
 
+
+        private RollTableModel _tableModel;
+
+        private RollTableModel TableModel
+        {
+            get
+            {
+                if (_tableModel != null) return _tableModel;
+                _tableModel = new RollTableModel(RollEntries);
+                return _tableModel;
+            }
+        }
+
+
         public RollTable()
         {
             _rollEntries = new List<RollEntry>();
-            _rollEntries.Add(new RollEntry("Root", -1, 0));
+            _rollEntries.Add(new RollEntry(null, "Root", -1, 0, 0));
         }
+
+
+        public RollEntry TestRoll()
+        {
+            return TableModel.Roll(_rollEntries);
+        }
+
+        public void CalculateDropChance()
+        {
+            TableModel.CalculateDropChance();
+        }
+
+
+        public int IndexOfItem(RollEntry re)
+        {
+            return TableModel.IndexOfItem(re);
+        }
+
+
+        public RollEntry Roll(List<RollEntry> rollContext = null) 
+        {
+            return TableModel.Roll();
+        }
+
+
+        public void AddObjects(Object[] objects)
+        {
+            TableModel.AddObjectsToTree(objects);
+        }
+
+
+        public void AddObject(Object obj)
+        {
+            TableModel.AddObjectToTree(obj);
+        }
+
+        protected int TotalWeight => TableModel.TotalWeight;
     }
 }
 

@@ -25,10 +25,7 @@ namespace RollAnything
         const float _spacing = 2f;
 
 
-        private bool expandedRollTable;
         private Rect _propertyBaseRect, _toolbarRect, _searchBarRect, _treeviewRect, _bottomToolbarRect;
-
-
         private SerializedProperty activeProperty;
         private SerializedProperty rollEntryList;
         private RollTableModel tableModel;
@@ -43,13 +40,27 @@ namespace RollAnything
             }
         }
 
-        RollTableView treeView;
 
-        public RollTableView RollTreeView
+        private SerializedProperty expandedRollTable = null;
+
+        private SerializedProperty ExpandedRollTable
         {
             get
             {
-                if (treeView != null) return treeView;
+                if (expandedRollTable != null) return expandedRollTable;
+                expandedRollTable = activeProperty.FindPropertyRelative("expandedtable");
+                return expandedRollTable;
+            }
+        }
+
+
+        RollTableView rollTableTreeView;
+
+        public RollTableView RollTableTreeView
+        {
+            get
+            {
+                if (rollTableTreeView != null) return rollTableTreeView;
                 if (_treeViewState == null)
                     _treeViewState = new TreeViewState();
 
@@ -66,7 +77,7 @@ namespace RollAnything
 
                 var treeModel = TableModel;
 
-                return treeView = new RollTableView(_treeViewState, multiColumnHeader, treeModel);
+                return rollTableTreeView = new RollTableView(_treeViewState, multiColumnHeader, treeModel);
             }
         }
 
@@ -78,7 +89,7 @@ namespace RollAnything
             {
                 if (searchField != null) return searchField;
                 searchField = new SearchField();
-                searchField.downOrUpArrowKeyPressed += treeView.SetFocusAndEnsureSelectedItem;
+                searchField.downOrUpArrowKeyPressed += RollTableTreeView.SetFocusAndEnsureSelectedItem;
                 return searchField;
             }
         }
@@ -93,22 +104,18 @@ namespace RollAnything
             activeProperty.serializedObject.Update();
             data = new List<RollEntry>();
 
-            Debug.Log("ArraySize: " + arraySize);
             if (arraySize <= 0)
-                data.Add(new RollEntry("Root", -1, 0));
+                data.Add(new RollEntry(null, "Root", -1, 0, 0));
 
 
             for (int i = 0; i < arraySize; i++)
             {
                 var tableEntry = rollEntryList.GetArrayElementAtIndex(i);
-                Debug.Log("Found Table Entry: " + tableEntry.propertyPath);
+
                 data.Add(PropertyToRollEntry(tableEntry));
             }
 
             rollEntryList.SetValueDirect(data);
-
-
-            Debug.Log("Setting " + rollEntryList.name + " to " + data);
             activeProperty.serializedObject.ApplyModifiedProperties();
 
             return data;
@@ -116,14 +123,14 @@ namespace RollAnything
 
         RollEntry PropertyToRollEntry(SerializedProperty tableEntryProperty)
         {
+            Object rollObject = tableEntryProperty.FindPropertyRelative("MyObject").objectReferenceValue;
             string name = tableEntryProperty.FindPropertyRelative("m_Name").stringValue;
             int depth = tableEntryProperty.FindPropertyRelative("m_Depth").intValue;
             int id = tableEntryProperty.FindPropertyRelative("m_ID").intValue;
-            int weight = tableEntryProperty.FindPropertyRelative("m_Weight").intValue;
-            int guaranteeBonus = tableEntryProperty.FindPropertyRelative("m_GuaranteeBonus").intValue;
-            Debug.LogFormat("Creating new RollEntry(name={0},  depth={1}, id={2}, weight={3}, guaranteeBonus={4}", name,
-                depth, id, weight, guaranteeBonus);
-            return new RollEntry(name, depth, id, weight, guaranteeBonus);
+            int weight = tableEntryProperty.FindPropertyRelative("Weight").intValue;
+//            int guaranteeBonus = tableEntryProperty.FindPropertyRelative("m_GuaranteeBonus").intValue;
+
+            return new RollEntry(rollObject, name, depth, id, weight);
             ;
         }
 
@@ -159,15 +166,19 @@ namespace RollAnything
             }
         }
 
+
         public override void OnGUI(Rect propertyRect, SerializedProperty property, GUIContent label)
         {
             activeProperty = property;
             rollEntryList = activeProperty.FindPropertyRelative("_rollEntries");
+
             _propertyBaseRect = new Rect(propertyRect.x, propertyRect.y, propertyRect.width, _toolBarHeight);
 
+            ExpandedRollTable.boolValue =
+                EditorGUI.Foldout(_propertyBaseRect, ExpandedRollTable.boolValue, label);
 
-            expandedRollTable = EditorGUI.Foldout(_propertyBaseRect, expandedRollTable, label);
-            if (expandedRollTable)
+
+            if (expandedRollTable.boolValue)
             {
                 using (new EditorGUI.IndentLevelScope(1))
                 {
@@ -177,12 +188,13 @@ namespace RollAnything
                     _searchBarRect = DrawSearchBar(_toolbarRect);
 
                     _treeviewRect = DrawTreeView(_searchBarRect);
-                    
+
                     _bottomToolbarRect = BottomToolBarLayout(_treeviewRect);
-                    
+
                     _fullPropertyHeight = CalculatePropertyheight;
                 }
             }
+
             else
             {
                 _fullPropertyHeight = 0;
@@ -193,58 +205,64 @@ namespace RollAnything
         {
             float scaledWidth = (fullSizeRect.width / scale) + 1;
             Vector2 pos = new Vector2(fullSizeRect.position.x + (scaledWidth * widthPosition), fullSizeRect.position.y);
+
             Vector2 area = new Vector2(scaledWidth, fullSizeRect.height);
             return new Rect(pos, area);
         }
 
+        void AddItem(Object objectToAdd = null)
+        {
+            Undo.RecordObject(activeProperty.serializedObject.targetObject, "Add Item To Asset");
+
+            // Add item as child of selection
+            var selection = RollTableTreeView.GetSelection();
+            TreeElement parent = (selection.Count == 1 ? RollTableTreeView.treeModel.Find(selection[0]) : null) ??
+                                 RollTableTreeView.treeModel.root;
+            int depth = parent != null ? parent.depth + 1 : 0;
+            int id = RollTableTreeView.treeModel.GenerateUniqueID();
+            var element = new RollEntry(objectToAdd, objectToAdd.name, depth = depth, id);
+            RollTableTreeView.treeModel.AddElement(element, parent, 0);
+
+            // Select newly created element
+            RollTableTreeView.SetSelection(new[] {id}, TreeViewSelectionOptions.RevealAndFrame);
+        }
 
         Rect DrawToolBarLayout(Rect previousRect)
         {
             int buttonDivision = 6;
+
             Rect toolBarRect = new Rect(previousRect.x, previousRect.y + previousRect.height, previousRect.width,
                 _toolBarHeight);
 
-
             Rect testButtonRect = DivideRectHorizontal(toolBarRect, buttonDivision, 0);
-
 
             var style = "miniButton";
             if (GUI.Button(testButtonRect, "Test Roll"))
             {
-                RollTreeView.TestRoll();
+                RollTableTreeView.TestRoll();
             }
-            string lastRolledLabel = "NONE";
 
-            if (RollTreeView.LastRolled != null)
-                lastRolledLabel = RollTreeView.LastRolled.name;
+            string lastRolledLabel = "NONE";
+            if (RollTableTreeView.LastRolled != null)
+                lastRolledLabel = RollTableTreeView.LastRolled.name;
 
             Rect rollLabelRect = DivideRectHorizontal(toolBarRect, buttonDivision, 1);
             GUI.Label(rollLabelRect, "Last Rolled: " + lastRolledLabel);
 
+            //TODO Add Dragndrop area
 
-            Rect addItemRect = DivideRectHorizontal(toolBarRect, buttonDivision, 4);
-            if (GUI.Button(addItemRect, "Add Item", style))
-            {
-                Undo.RecordObject(activeProperty.serializedObject.targetObject, "Add Item To Asset");
+//            Rect addItemRect = DivideRectHorizontal(toolBarRect, buttonDivision, 4);
+//            if (GUI.Button(addItemRect, "Add Item", style))
+//            {
+//                AddItem();
+//            }
 
-                // Add item as child of selection
-                var selection = RollTreeView.GetSelection();
-                TreeElement parent = (selection.Count == 1 ? RollTreeView.treeModel.Find(selection[0]) : null) ??
-                                     RollTreeView.treeModel.root;
-                int depth = parent != null ? parent.depth + 1 : 0;
-                int id = RollTreeView.treeModel.GenerateUniqueID();
-                var element = new RollEntry("Item " + id, depth, id);
-                RollTreeView.treeModel.AddElement(element, parent, 0);
-
-                // Select newly created element
-                RollTreeView.SetSelection(new[] {id}, TreeViewSelectionOptions.RevealAndFrame);
-            }
             Rect removeItemRect = DivideRectHorizontal(toolBarRect, buttonDivision, 5);
             if (GUI.Button(removeItemRect, "Remove Item", style))
             {
                 Undo.RecordObject(activeProperty.serializedObject.targetObject, "Remove Item From Asset");
-                var selection = RollTreeView.GetSelection();
-                RollTreeView.treeModel.RemoveElements(selection);
+                var selection = RollTableTreeView.GetSelection();
+                RollTableTreeView.treeModel.RemoveElements(selection);
             }
             return toolBarRect;
         }
@@ -253,9 +271,9 @@ namespace RollAnything
         {
             Rect searchBarRect = new Rect(previousRect.x, previousRect.y + previousRect.height, previousRect.width,
                 _toolBarHeight);
-            RollTreeView.searchString =
+            RollTableTreeView.searchString =
                 _searchField.OnGUI(searchBarRect,
-                    RollTreeView.searchString);
+                    RollTableTreeView.searchString);
             return searchBarRect;
         }
 
@@ -267,10 +285,8 @@ namespace RollAnything
         Rect DrawTreeView(Rect previousRect)
         {
             Rect treeViewRect = new Rect(previousRect.x, previousRect.y + previousRect.height, previousRect.width,
-                RollTreeView.totalHeight + 10 + 2 * _spacing);
-
-            RollTreeView.OnGUI(treeViewRect);
-
+                RollTableTreeView.totalHeight + 10 + 2 * _spacing);
+            RollTableTreeView.OnGUI(treeViewRect);
             return treeViewRect;
         }
 
@@ -279,66 +295,56 @@ namespace RollAnything
             int buttonDivision = 10;
             Rect bottomToolbar = new Rect(previousRect.x, previousRect.y + previousRect.height, previousRect.width,
                 _toolBarHeight);
-
             Rect expandButtonRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 0);
             var style = "miniButton";
             if (GUI.Button(expandButtonRect, "Expand All", style))
             {
-                RollTreeView.ExpandAll();
+                RollTableTreeView.ExpandAll();
             }
-
             Rect collapseButtonRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 1);
             if (GUI.Button(collapseButtonRect, "Collapse All", style))
             {
-                RollTreeView.CollapseAll();
+                RollTableTreeView.CollapseAll();
             }
-
             Rect propertyLabelRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 2);
             GUI.Label(propertyLabelRect, activeProperty.serializedObject.context != null
                 ? AssetDatabase.GetAssetPath(activeProperty.serializedObject.context)
                 : string.Empty);
-
             Rect setSortingRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 3);
             if (GUI.Button(setSortingRect, "Set sorting", style))
             {
-                var myColumnHeader = (MyMultiColumnHeader) RollTreeView.multiColumnHeader;
+                var myColumnHeader = (MyMultiColumnHeader) RollTableTreeView.multiColumnHeader;
                 myColumnHeader.SetSortingColumns(new int[] {4, 3, 2}, new[] {true, false, true});
                 myColumnHeader.mode = MyMultiColumnHeader.Mode.LargeHeader;
             }
-
             Rect headerRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 5);
             GUI.Label(headerRect, "Header: ", "minilabel");
-
             Rect largeButtonRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 6);
             if (GUI.Button(largeButtonRect, "Large", style))
             {
-                var myColumnHeader = (MyMultiColumnHeader) RollTreeView.multiColumnHeader;
+                var myColumnHeader = (MyMultiColumnHeader) RollTableTreeView.multiColumnHeader;
                 myColumnHeader.mode = MyMultiColumnHeader.Mode.LargeHeader;
             }
-
             Rect mediumButtonRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 7);
             if (GUI.Button(mediumButtonRect, "Default", style))
             {
-                var myColumnHeader = (MyMultiColumnHeader) RollTreeView.multiColumnHeader;
+                var myColumnHeader = (MyMultiColumnHeader) RollTableTreeView.multiColumnHeader;
                 myColumnHeader.mode = MyMultiColumnHeader.Mode.DefaultHeader;
             }
-
             Rect smallButtonRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 8);
             if (GUI.Button(smallButtonRect, "No sort", style))
             {
-                var myColumnHeader = (MyMultiColumnHeader) RollTreeView.multiColumnHeader;
+                var myColumnHeader = (MyMultiColumnHeader) RollTableTreeView.multiColumnHeader;
                 myColumnHeader.mode = MyMultiColumnHeader.Mode.MinimumHeaderWithoutSorting;
             }
-
             Rect valueControlRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 9);
             if (GUI.Button(valueControlRect, "values <-> controls", style))
             {
-                RollTreeView.showControls = !RollTreeView.showControls;
+                RollTableTreeView.showControls = !RollTableTreeView.showControls;
             }
             return bottomToolbar;
         }
     }
-
 
     internal class MyMultiColumnHeader : MultiColumnHeader
     {
@@ -383,13 +389,13 @@ namespace RollAnything
 
         protected override void ColumnHeaderGUI(MultiColumnHeaderState.Column column, Rect headerRect, int columnIndex)
         {
-            // Default column header gui
+// Default column header gui
             base.ColumnHeaderGUI(column, headerRect, columnIndex);
 
-            // Add additional info for large header
+// Add additional info for large header
             if (mode == Mode.LargeHeader)
             {
-                // Show example overlay stuff on some of the columns
+// Show example overlay stuff on some of the columns
                 if (columnIndex > 2)
                 {
                     headerRect.xMax -= 3f;

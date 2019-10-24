@@ -57,17 +57,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\HiearchyIcons.cs" />
-    <Compile Include="Assets\Editor\Inspector\RollEntryPropertyDrawer.cs" />
-    <Compile Include="Assets\Editor\Inspector\RollTableEditor.cs" />
-    <Compile Include="Assets\Editor\Inspector\RollTableEditor1.cs" />
     <Compile Include="Assets\Editor\Inspector\RollTablePropertyDrawer.cs" />
     <Compile Include="Assets\Editor\Inspector\RollTableView.cs" />
-    <Compile Include="Assets\Editor\Inspector\SpawnableEntryPreview.cs" />
-    <Compile Include="Assets\Editor\Inspector\TableEditor.cs" />
-    <Compile Include="Assets\Editor\Inspector\TableHolderInspector.cs" />
-    <Compile Include="Assets\Editor\Window\RollTableWindow.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>C:/Projects/RollAnything/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>

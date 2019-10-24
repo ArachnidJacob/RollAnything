@@ -7,6 +7,47 @@ using UnityEditor;
 
 public static class PropertyTools
 {
+    public static object GetValue(this SerializedProperty property)
+    {
+        if (property?.serializedObject == null)
+            return null;
+        object obj = property.serializedObject.targetObject;
+
+        foreach (var path in property.propertyPath.Split('.'))
+        {
+            var type = obj.GetType();
+            var field = type.GetField(path);
+            obj = field.GetValue(obj);
+        }
+        return obj;
+    }
+
+    public static void SetValue(this SerializedProperty property, object value)
+    {
+        if (property?.serializedObject == null)
+        {
+            Debug.LogError("No Property or SerializedObject");
+            return;
+        }
+
+        object obj = property.serializedObject.targetObject;
+
+        var fieldList = new List<KeyValuePair<FieldInfo, object>>();
+        foreach (var path in property.propertyPath.Split('.'))
+        {
+            var type = obj.GetType();
+            var field = type.GetField(path);
+            fieldList.Add(new KeyValuePair<FieldInfo, object>(field, obj));
+            obj = field.GetValue(obj);
+        }
+        for (var i = fieldList.Count - 1; i > -0; --i)
+        {
+            fieldList[i].Key.SetValue(fieldList[i].Value, value);
+            value = fieldList[i].Value;
+        }
+    }
+
+
     public static void SetValueDirect(this SerializedProperty property, object value)
     {
         if (property == null)

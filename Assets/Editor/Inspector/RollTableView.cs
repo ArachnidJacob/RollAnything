@@ -7,6 +7,8 @@ using RollAnything;
 using UnityEditor;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
+using UnityEngine.Rendering.UI;
+using Object = UnityEngine.Object;
 
 public class RollTableView : TreeViewWithTreeModel<RollEntry>
 {
@@ -36,7 +38,7 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
         Object,
         Weight,
         DropChance,
-        GuaranteeBonus,
+        //GuaranteeBonus,
     }
 
     public enum SortOption
@@ -46,7 +48,7 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
         Object,
         Weight,
         DropChance,
-        GuaranteeBonus,
+        // GuaranteeBonus,
     }
 
     // Sort options per column
@@ -57,10 +59,10 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
         SortOption.Object,
         SortOption.Weight,
         SortOption.DropChance,
-        SortOption.GuaranteeBonus
+        // SortOption.GuaranteeBonus
     };
 
-    protected new void Init(RollTableModel model)
+    protected void Init(RollTableModel model)
     {
         base.Init(model);
         //treeChanged += RecalcDropChance;
@@ -188,14 +190,14 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
                     orderedQuery = orderedQuery.ThenBy(l => l.data.name, ascending);
                     break;
                 case SortOption.Weight:
-                    orderedQuery = orderedQuery.ThenBy(l => l.data.m_Weight, ascending);
+                    orderedQuery = orderedQuery.ThenBy(l => l.data.Weight, ascending);
                     break;
                 case SortOption.DropChance:
                     orderedQuery = orderedQuery.ThenBy(l => l.data.localDropChance, ascending);
                     break;
-                case SortOption.GuaranteeBonus:
-                    orderedQuery = orderedQuery.ThenBy(l => l.data.m_GuaranteeBonus, ascending);
-                    break;
+//                case SortOption.GuaranteeBonus:
+//                    orderedQuery = orderedQuery.ThenBy(l => l.data.m_GuaranteeBonus, ascending);
+//                    break;
             }
         }
 
@@ -212,11 +214,11 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
             case SortOption.Name:
                 return myTypes.Order(l => l.data.name, ascending);
             case SortOption.Weight:
-                return myTypes.Order(l => l.data.m_Weight, ascending);
+                return myTypes.Order(l => l.data.Weight, ascending);
             case SortOption.DropChance:
                 return myTypes.Order(l => l.data.localDropChance, ascending);
-            case SortOption.GuaranteeBonus:
-                return myTypes.Order(l => l.data.m_GuaranteeBonus, ascending);
+//            case SortOption.GuaranteeBonus:
+//                return myTypes.Order(l => l.data.m_GuaranteeBonus, ascending);
             default:
                 Assert.IsTrue(false, "Unhandled enum");
                 break;
@@ -267,22 +269,22 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
             case MyColumns.Object:
             case MyColumns.Weight:
             case MyColumns.DropChance:
-            case MyColumns.GuaranteeBonus:
+
             {
                 if (showControls)
                 {
                     cellRect.xMin += 5f; // When showing controls make some extra spacing
                     if (column == MyColumns.Object)
                     {
-                        item.data.m_ObjectToRoll = EditorGUI.ObjectField(cellRect, item.data.m_ObjectToRoll,
+                        item.data.MyObject = EditorGUI.ObjectField(cellRect, item.data.MyObject,
                             typeof(UnityEngine.Object), true);
                     }
                     if (column == MyColumns.Weight)
                     {
                         using (var check = new EditorGUI.ChangeCheckScope())
                         {
-                            item.data.m_Weight =
-                                EditorGUI.IntField(cellRect, item.data.m_Weight);
+                            item.data.Weight =
+                                EditorGUI.IntField(cellRect, item.data.Weight);
                             if (check.changed)
                             {
                                 TableModel.CalculateDropChance();
@@ -296,20 +298,20 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
                             item.data.localDropChance.ToString());
                     }
 
-                    if (column == MyColumns.GuaranteeBonus)
-                        item.data.m_GuaranteeBonus = EditorGUI.IntField(cellRect, item.data.m_GuaranteeBonus);
+//                    if (column == MyColumns.GuaranteeBonus)
+//                        item.data.m_GuaranteeBonus = EditorGUI.IntField(cellRect, item.data.m_GuaranteeBonus);
                 }
                 else
                 {
                     string value = "Missing";
                     if (column == MyColumns.Object)
                     {
-                        if (item.data != null && item.data.m_ObjectToRoll != null)
-                            value = item.data.m_ObjectToRoll.ToString();
+                        if (item.data != null && item.data.MyObject != null)
+                            value = item.data.MyObject.ToString();
                     }
 
                     if (column == MyColumns.Weight)
-                        value = item.data.m_Weight.ToString("f5");
+                        value = item.data.Weight.ToString("f5");
                     if (column == MyColumns.DropChance)
                         value = item.data.localDropChance.ToString("f5");
 //                    if (column == MyColumns.GuaranteeBonus)
@@ -358,6 +360,69 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
     {
         return true;
     }
+
+    const string k_ObjectDragID = "ObjectDragging";
+
+
+    protected override void SetupDragAndDrop(SetupDragAndDropArgs args)
+    {
+        Debug.LogFormat("Id's: \n {0}", args.draggedItemIDs);
+        if (DragAndDrop.objectReferences != null && DragAndDrop.objectReferences.Length > 0)
+        {
+            DragAndDrop.SetGenericData(k_ObjectDragID, DragAndDrop.objectReferences);
+        }
+        else
+        {
+            base.SetupDragAndDrop(args);
+        }
+    }
+
+    protected override DragAndDropVisualMode HandleDragAndDrop(DragAndDropArgs args)
+    {
+        Object[] draggedObjects = DragAndDrop.objectReferences;
+        Debug.LogFormat("pos: {0}\nindex: {1}\nparent: {2}\ndrop:{3}\nobjs: {4}",
+            args.dragAndDropPosition, args.insertAtIndex, args.parentItem, args.performDrop, draggedObjects);
+
+        if (draggedObjects != null && draggedObjects.Length > 0)
+        {
+            switch (args.dragAndDropPosition)
+            {
+                case DragAndDropPosition.UponItem:
+                case DragAndDropPosition.BetweenItems:
+                {
+                    // bool validDrag = ValidDrag(args.parentItem, entryObjects);
+                    if (args.performDrop)
+                    {
+                        var parentData = ((TreeViewItem<RollEntry>) args.parentItem).data;
+                        if (draggedObjects.Length > 1)
+                            TableModel.AddObjectsToTree(draggedObjects, parentData, args.insertAtIndex);
+                        else
+                            TableModel.AddObjectToTree(draggedObjects.First(), parentData, args.insertAtIndex);
+                    }
+                    return DragAndDropVisualMode.Move; //: DragAndDropVisualMode.None;
+                }
+
+                case DragAndDropPosition.OutsideItems:
+                {
+                    if (args.performDrop)
+                    {
+                        var parentData = m_TreeModel.root;
+                        if (draggedObjects.Length > 1)
+                            TableModel.AddObjectsToTree(draggedObjects, parentData, 0);
+                        else
+                            TableModel.AddObjectToTree(draggedObjects.First(), parentData, 0);
+                    }
+                    return DragAndDropVisualMode.Move;
+                }
+                default:
+                    Debug.LogError("Unhandled enum " + args.dragAndDropPosition);
+                    return DragAndDropVisualMode.None;
+            }
+        }
+
+        return base.HandleDragAndDrop(args);
+    }
+
 
     public static MultiColumnHeaderState CreateDefaultMultiColumnHeaderState(float treeViewWidth)
     {
@@ -424,18 +489,18 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
                 autoResize = true,
                 allowToggleVisibility = true
             },
-            new MultiColumnHeaderState.Column
-            {
-                headerContent =
-                    new GUIContent("GuaranteeBonus",
-                        "Added Weight per missed roll that gets added to this item for pseudo randomness."),
-                headerTextAlignment = TextAlignment.Center,
-                sortedAscending = true,
-                sortingArrowAlignment = TextAlignment.Left,
-                width = 120,
-                minWidth = 60,
-                autoResize = true
-            }
+//            new MultiColumnHeaderState.Column
+//            {
+//                headerContent =
+//                    new GUIContent("GuaranteeBonus",
+//                        "Added Weight per missed roll that gets added to this item for pseudo randomness."),
+//                headerTextAlignment = TextAlignment.Center,
+//                sortedAscending = true,
+//                sortingArrowAlignment = TextAlignment.Left,
+//                width = 120,
+//                minWidth = 60,
+//                autoResize = true
+//            }
         };
 
         Assert.AreEqual(columns.Length, Enum.GetValues(typeof(MyColumns)).Length,
