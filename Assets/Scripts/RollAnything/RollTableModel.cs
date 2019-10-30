@@ -7,13 +7,13 @@ using UnityEngine;
 using UnityEngine.Animations;
 
 [System.Serializable]
-public class RollTableModel : TreeModel<RollEntry>
+public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
 {
     private int _lastRoll;
     private int _currentWeight;
-    public RollEntry LastRolled;
+    public RollEntry<T> LastRolled;
 
-    public RollTableModel(IList<RollEntry> rollEntries)
+    public RollTableModel(IList<RollEntry<T>> rollEntries)
     {
         SetData(rollEntries);
         CalculateDropChance();
@@ -21,17 +21,18 @@ public class RollTableModel : TreeModel<RollEntry>
     }
 
 
-    public RollEntry TestRoll()
+    public RollEntry<T> TestRoll()
     {
-        return LastRolled = Roll((List<RollEntry>) m_Data);
+        return LastRolled = Roll(m_Data);
     }
+
 
     public void CalculateDropChance()
     {
         int totWeight = TotalWeight;
-//        Debug.Log("Calculating Drop Chance " + totWeight);
 
-        foreach (RollEntry re in m_Data)
+
+        foreach (RollEntry<T> re in m_Data)
         {
             re.SetLocalDropChance(totWeight);
         }
@@ -39,14 +40,18 @@ public class RollTableModel : TreeModel<RollEntry>
         //TreeElementUtility.TreeToList(root, m_Data);
     }
 
+    public void UpdateModel()
+    {
+        Changed();
+    }
 
-    public int IndexOfItem(RollEntry re)
+    public int IndexOfItem(RollEntry<T> re)
     {
         return m_Data.IndexOf(re);
     }
 
 
-    public RollEntry Roll(List<RollEntry> rollContext = null) // where T : Entry
+    public RollEntry<T> Roll(IList<RollEntry<T>> rollContext = null) // where T : Entry
     {
 //            Debug.Log(drollObjects.Count + " objects to roll against");
         if (rollContext == null)
@@ -54,7 +59,7 @@ public class RollTableModel : TreeModel<RollEntry>
         if (rollContext.Count < 1) return null;
         if (rollContext.Count == 1)
         {
-            RollEntry firstObject = rollContext.First();
+            RollEntry<T> firstObject = rollContext.First();
             // Debug.Log(firstObject + "is the entry",firstObject);
             return firstObject;
         }
@@ -68,7 +73,7 @@ public class RollTableModel : TreeModel<RollEntry>
 //            if (rollContext[i] == null || rollContext[i].m_ObjectToRoll == null) // if its an empty entry, ignore it
 //                continue;
 
-            RollEntry currentObject = rollContext[i];
+            RollEntry<T> currentObject = rollContext[i];
 
             //Go through list, adding weights together, once we've surpassed the roll value, it gives us the weighted RollEntry
             _currentWeight += currentObject.TotalWeight;
@@ -96,7 +101,7 @@ public class RollTableModel : TreeModel<RollEntry>
         get
         {
             int weightTotal = 0;
-            foreach (RollEntry re in m_Data)
+            foreach (RollEntry<T> re in m_Data)
             {
                 weightTotal += re.TotalWeight;
             }
@@ -104,7 +109,7 @@ public class RollTableModel : TreeModel<RollEntry>
         }
     }
 
-    
+
     /// <summary>
     /// new Entry Constructor to Add to the TreeModel properly
     /// </summary>
@@ -112,7 +117,7 @@ public class RollTableModel : TreeModel<RollEntry>
     /// <param name="name"></param>
     /// <param name="parent"></param>
     /// <returns></returns>
-    RollEntry NewEntry(Object objectToRoll, string name, RollEntry parent)
+    RollEntry<T> NewEntry(T objectToRoll, string name, RollEntry<T> parent)
     {
         if (parent == null)
             parent = root;
@@ -127,27 +132,7 @@ public class RollTableModel : TreeModel<RollEntry>
             weight = rollWeightedCast.GetRollWeight();
         }
 
-        return new RollEntry(objectToRoll, name, parent.depth, GenerateUniqueID(), weight);
-    }
-
-    /// <summary>
-    /// For Adding Unity Objects to the tree directly
-    /// </summary>
-    /// <param name="objects"></param>
-    /// <param name="parent"></param>
-    /// <param name="index"></param>
-    public void AddObjectsToTree(Object[] objects, RollEntry parent = null, int index = 0)
-    {
-        List<RollEntry> rollEntries = new List<RollEntry>();
-
-        if (parent == null)
-            parent = root;
-
-        foreach (Object objectToRoll in objects)
-        {
-            rollEntries.Add(NewEntry(objectToRoll, objectToRoll.name, parent));
-        }
-        AddElements(rollEntries, parent, index);
+        return new RollEntry<T>(objectToRoll, name, parent.depth, GenerateUniqueID(), weight);
     }
 
 
@@ -157,13 +142,45 @@ public class RollTableModel : TreeModel<RollEntry>
     /// <param name="objectToRoll"></param>
     /// <param name="parent"></param>
     /// <param name="index"></param>
-    public void AddObjectToTree(Object objectToRoll, RollEntry parent = null, int index = 0, string overrideName = "")
+    public void AddObjectToTree(T objectToRoll, RollEntry<T> parent = null, int index = 0, string overrideName = "")
     {
         var newEntry = NewEntry(objectToRoll, overrideName, parent);
 
         AddElement(newEntry, parent,
             index == -1 ? 0 : index);
     }
+
+    /// <summary>
+    /// For Adding Unity Objects to the tree directly
+    /// </summary>
+    /// <param name="objects"></param>
+    /// <param name="parent"></param>
+    /// <param name="index"></param>
+    public void AddObjectsToTree(T[] objects, RollEntry<T> parent = null, int index = 0)
+    {
+        if (parent == null)
+            parent = root;
+
+        var rollEntries = objects.Select(objectToRoll => NewEntry(objectToRoll, objectToRoll.name, parent)).ToList();
+        AddElements(rollEntries, parent, index);
+    }
+
+
+    public void RemoveObject(T objectToRemove)
+    {
+        var toRemove = m_Data.Where(re => re.HasObject(objectToRemove)).ToList();
+
+        RemoveElements(toRemove);
+    }
+
+
+    public void RemoveObjects(T[] objectToRemove)
+    {
+        var toRemove = m_Data.Where(re => re.HasObject(objectToRemove)).ToList();
+
+        RemoveElements(toRemove);
+    }
+
 
     //    /// <summary>
 //    /// Increases the odds for all guaranteed drops in list to drop

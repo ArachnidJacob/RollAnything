@@ -1,20 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace RollAnything
 {
     [System.Serializable]
-    public class RollEntry : TreeElement
+    public class RollEntry<T> : TreeElement where  T : Object
     {
-        public Object MyObject;
+        public T MyObject;
         public int Weight;
         public float localDropChance;
         public float totalDropChance;
         public int m_DropTimes;
 
 
-        public RollEntry(Object targetMyObject, string name = "", int depth = 0, int id = 0, int weight = 1)
+        public RollEntry(T targetMyObject, string name = "", int depth = 0, int id = 0, int weight = 1)
         {
             MyObject = targetMyObject;
             m_Name = name;
@@ -43,17 +44,24 @@ namespace RollAnything
         }
 
 
-        public bool HasObject(Object o)
+        public bool HasObject(T o)
+        {
+            return MyObject != null && MyObject.Equals(o);
+        }
+
+        public bool HasObject(T[] oa)
         {
             if (MyObject == null)
                 return false;
-            return MyObject.Equals(o);
+            if (oa != null) return oa.Contains(MyObject);
+            Debug.LogError("No array to check for object");
+            return false;
         }
+
 
         public System.Type EntryType()
         {
-            if (MyObject == null) return null;
-            return MyObject.GetType();
+            return MyObject == null ? null : MyObject.GetType();
         }
     }
 }

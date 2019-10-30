@@ -6,6 +6,7 @@ using NUnit.Framework;
 using RollAnything;
 using UnityEditor;
 using UnityEditor.IMGUI.Controls;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Rendering.UI;
 using Object = UnityEngine.Object;
@@ -273,31 +274,31 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
             {
                 if (showControls)
                 {
-                    cellRect.xMin += 5f; // When showing controls make some extra spacing
-                    if (column == MyColumns.Object)
+                    using (var check = new EditorGUI.ChangeCheckScope())
                     {
-                        item.data.MyObject = EditorGUI.ObjectField(cellRect, item.data.MyObject,
-                            typeof(UnityEngine.Object), true);
-                    }
-                    if (column == MyColumns.Weight)
-                    {
-                        using (var check = new EditorGUI.ChangeCheckScope())
+                        cellRect.xMin += 5f; // When showing controls make some extra spacing
+                        if (column == MyColumns.Object)
+                        {
+                            item.data.MyObject = EditorGUI.ObjectField(cellRect, item.data.MyObject,
+                                typeof(UnityEngine.Object), true);
+                        }
+                        if (column == MyColumns.Weight)
                         {
                             item.data.Weight =
                                 EditorGUI.IntField(cellRect, item.data.Weight);
-                            if (check.changed)
-                            {
-                                TableModel.CalculateDropChance();
-                            }
+                        }
+                        //TODO DropChance Direct edit : half reduces entire tree proportionally, half increases m_Weight proportionately
+                        if (column == MyColumns.DropChance)
+                        {
+                            EditorGUI.LabelField(cellRect,
+                                item.data.localDropChance.ToString());
+                        }
+
+                        if (check.changed)
+                        {
+                            TableModel.UpdateModel();
                         }
                     }
-                    //TODO DropChance Direct edit : half reduces entire tree proportionally, half increases m_Weight proportionately
-                    if (column == MyColumns.DropChance)
-                    {
-                        EditorGUI.LabelField(cellRect,
-                            item.data.localDropChance.ToString());
-                    }
-
 //                    if (column == MyColumns.GuaranteeBonus)
 //                        item.data.m_GuaranteeBonus = EditorGUI.IntField(cellRect, item.data.m_GuaranteeBonus);
                 }

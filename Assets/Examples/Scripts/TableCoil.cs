@@ -1,57 +1,92 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using RollAnything;
 
 namespace RollTableExamples
 {
+    [RequireComponent(typeof(SphereCollider))]
     public class TableCoil : MonoBehaviour
     {
-        [SerializeField] private RollTable zappables;
+        [SerializeField] private float _defaultDamage = 5;
+        [SerializeField] private float _range = 5;
+        [SerializeField] private RollTable _zappables;
 
-        [SerializeField] private LineRenderer zapLine;
+        [SerializeField] private LineRenderer _zapLine;
 
 
         void Start()
         {
-            AddZappablesToTable();
-
-            StartCoroutine("ZapNumerator");
+            InitSphereCollider();
         }
 
-        IEnumerator ZapNumerator()
+        private SphereCollider mySphereCollider;
+
+        private SphereCollider MySphereCollider
         {
-            while (true)
+            get
             {
-                ZapSomething();
-                yield return new WaitForSeconds(.2f);
+                if (mySphereCollider != null) return mySphereCollider;
+
+                InitSphereCollider();
+
+                return mySphereCollider;
             }
         }
 
-        private List<ZapCube> zappableList = new List<ZapCube>();
-
-        void ZapSomething()
+        void InitSphereCollider()
         {
-            RollEntry entry = zappables.Roll();
-            ZapCube zappedCube = (ZapCube) entry.MyObject;
-            ZapLineEffect(zappedCube.transform);
-            zappedCube.Zap();
+            mySphereCollider = GetComponentInChildren<SphereCollider>();
+            if (mySphereCollider == null)
+                mySphereCollider = gameObject.AddComponent<SphereCollider>();
+            mySphereCollider.radius = _range;
+            mySphereCollider.isTrigger = true;
+        }
+
+        public void OnTriggerEnter(Collider otherCollider)
+        {
+            Health otherHealth = otherCollider.GetComponent<Health>();
+            if (!otherHealth)
+                return;
+            if (_zappables.Contains(otherHealth))
+                return;
+            _zappables.AddObject(otherHealth);
+        }
+
+        public void OnTriggerExit(Collider otherCollider)
+        {
+            Health otherHealth = otherCollider.GetComponent<Health>();
+            if (!otherHealth)
+                return;
+            if (!_zappables.Contains(otherHealth))
+                return;
+            _zappables.RemoveObject(otherHealth);
+        }
+
+        /// <summary>
+        /// Zap a random zappable in my list
+        /// </summary>
+        /// <param name="damage"></param>
+        public void ZapSomething(float damage = 0)
+        {
+            RollEntry entry = _zappables.Roll();
+            Health healthObject = (Health) entry.MyObject;
+            ZapLineEffect(healthObject.transform);
+            if (Math.Abs(damage) < .01f)
+                damage = _defaultDamage;
+            healthObject.Damage(damage);
         }
 
 
         void ZapLineEffect(Transform target)
         {
-            LineRenderer zapLineInstance = Instantiate<LineRenderer>(zapLine, transform.position, transform.rotation);
+            LineRenderer zapLineInstance = Instantiate<LineRenderer>(_zapLine, transform.position, transform.rotation);
 
             zapLineInstance.SetPosition(0, transform.position);
             zapLineInstance.SetPosition(1, target.position);
 
             Destroy(zapLineInstance.gameObject, .1f);
-        }
-
-        void AddZappablesToTable()
-        {
-            zappables.AddObjects(FindObjectsOfType<ZapCube>());
         }
     }
 }

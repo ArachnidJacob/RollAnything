@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 
 //using NUnit.Framework;
 
@@ -233,10 +234,11 @@ public class TreeModel<T> where T : TreeElement
         Changed();
     }
 
-    void Changed()
+    protected void Changed()
     {
         if (modelChanged != null)
             modelChanged();
+      // EditorUtility.SetDirty(m_Data);
     }
 }
 

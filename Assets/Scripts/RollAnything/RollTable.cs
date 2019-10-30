@@ -11,22 +11,22 @@ using Random = UnityEngine.Random;
 namespace RollAnything
 {
     [Serializable]
-    public class RollTable
+    public class RollTable<T> where T:Object
     {
-        [SerializeField] private List<RollEntry> _rollEntries = new List<RollEntry>();
+        [SerializeField] private List<RollEntry<T>> _rollEntries;
 
         public bool expandedtable = false;
         private int _lastRoll;
         private int _currentWeight;
 
-        List<RollEntry> RollEntries
+        List<RollEntry<T>> RollEntries
         {
             get
             {
                 if (_rollEntries.Count <= 0)
                 {
-                    _rollEntries = new List<RollEntry>();
-                    _rollEntries.Add(new RollEntry(null, "Root", -1, 0,0));
+                    _rollEntries = new List<RollEntry<T>>();
+                    _rollEntries.Add(new RollEntry<T>(null, "Root", -1, 0, 0));
                 }
                 return _rollEntries;
             }
@@ -34,14 +34,14 @@ namespace RollAnything
         }
 
 
-        private RollTableModel _tableModel;
+        private RollTableModel<T> _tableModel;
 
-        private RollTableModel TableModel
+        private RollTableModel<T> TableModel
         {
             get
             {
                 if (_tableModel != null) return _tableModel;
-                _tableModel = new RollTableModel(RollEntries);
+                _tableModel = new RollTableModel<T>(RollEntries);
                 return _tableModel;
             }
         }
@@ -49,12 +49,12 @@ namespace RollAnything
 
         public RollTable()
         {
-            _rollEntries = new List<RollEntry>();
-            _rollEntries.Add(new RollEntry(null, "Root", -1, 0, 0));
+            _rollEntries = new List<RollEntry<T>>();
+            _rollEntries.Add(new RollEntry<T>(null, "Root", -1, 0, 0));
         }
 
 
-        public RollEntry TestRoll()
+        public RollEntry<T> TestRoll()
         {
             return TableModel.Roll(_rollEntries);
         }
@@ -65,13 +65,22 @@ namespace RollAnything
         }
 
 
-        public int IndexOfItem(RollEntry re)
+        public int IndexOfItem(RollEntry<T> re)
         {
             return TableModel.IndexOfItem(re);
         }
 
+        public bool Contains(Object o)
+        {
+            foreach (RollEntry<T> re in _rollEntries)
+            {
+                if (re.MyObject == o)
+                    return true;
+            }
+            return false;
+        }
 
-        public RollEntry Roll(List<RollEntry> rollContext = null) 
+        public RollEntry<T> Roll(List<RollEntry<T>> rollContext = null)
         {
             return TableModel.Roll();
         }
@@ -87,6 +96,17 @@ namespace RollAnything
         {
             TableModel.AddObjectToTree(obj);
         }
+
+        public void RemoveObject(Object obj)
+        {
+            TableModel.RemoveObject(obj);
+        }
+        
+        public void RemoveObjects(Object[] objs)
+        {
+            TableModel.RemoveObjects(objs);
+        }
+
 
         protected int TotalWeight => TableModel.TotalWeight;
     }

@@ -4,8 +4,10 @@ using JetBrains.Annotations;
 using UnityEditor;
 using UnityEditor.IMGUI.Controls;
 using UnityEditor.Rendering;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Assertions.Comparers;
+using UnityEngine.SceneManagement;
 
 namespace RollAnything
 {
@@ -96,6 +98,10 @@ namespace RollAnything
 
         private List<RollEntry> data;
 
+        /// <summary>
+        /// Retrieves and initiatilizes the List for the model to use
+        /// </summary>
+        /// <returns></returns>
         List<RollEntry> GetData()
         {
             int arraySize = rollEntryList.arraySize;
@@ -128,6 +134,8 @@ namespace RollAnything
             int depth = tableEntryProperty.FindPropertyRelative("m_Depth").intValue;
             int id = tableEntryProperty.FindPropertyRelative("m_ID").intValue;
             int weight = tableEntryProperty.FindPropertyRelative("Weight").intValue;
+
+
 //            int guaranteeBonus = tableEntryProperty.FindPropertyRelative("m_GuaranteeBonus").intValue;
 
             return new RollEntry(rollObject, name, depth, id, weight);
@@ -186,8 +194,16 @@ namespace RollAnything
                     _toolbarRect = DrawToolBarLayout(_propertyBaseRect);
 
                     _searchBarRect = DrawSearchBar(_toolbarRect);
+                    using (var change = new EditorGUI.ChangeCheckScope())
+                    {
+                        _treeviewRect = DrawTreeView(_searchBarRect);
+                        if (change.changed)
+                        {
+                            EditorUtility.SetDirty(activeProperty.serializedObject.targetObject);
+                            //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
+                        }
+                    }
 
-                    _treeviewRect = DrawTreeView(_searchBarRect);
 
                     _bottomToolbarRect = BottomToolBarLayout(_treeviewRect);
 
@@ -210,22 +226,6 @@ namespace RollAnything
             return new Rect(pos, area);
         }
 
-        void AddItem(Object objectToAdd = null)
-        {
-            Undo.RecordObject(activeProperty.serializedObject.targetObject, "Add Item To Asset");
-
-            // Add item as child of selection
-            var selection = RollTableTreeView.GetSelection();
-            TreeElement parent = (selection.Count == 1 ? RollTableTreeView.treeModel.Find(selection[0]) : null) ??
-                                 RollTableTreeView.treeModel.root;
-            int depth = parent != null ? parent.depth + 1 : 0;
-            int id = RollTableTreeView.treeModel.GenerateUniqueID();
-            var element = new RollEntry(objectToAdd, objectToAdd.name, depth = depth, id);
-            RollTableTreeView.treeModel.AddElement(element, parent, 0);
-
-            // Select newly created element
-            RollTableTreeView.SetSelection(new[] {id}, TreeViewSelectionOptions.RevealAndFrame);
-        }
 
         Rect DrawToolBarLayout(Rect previousRect)
         {
@@ -249,13 +249,6 @@ namespace RollAnything
             Rect rollLabelRect = DivideRectHorizontal(toolBarRect, buttonDivision, 1);
             GUI.Label(rollLabelRect, "Last Rolled: " + lastRolledLabel);
 
-            //TODO Add Dragndrop area
-
-//            Rect addItemRect = DivideRectHorizontal(toolBarRect, buttonDivision, 4);
-//            if (GUI.Button(addItemRect, "Add Item", style))
-//            {
-//                AddItem();
-//            }
 
             Rect removeItemRect = DivideRectHorizontal(toolBarRect, buttonDivision, 5);
             if (GUI.Button(removeItemRect, "Remove Item", style))

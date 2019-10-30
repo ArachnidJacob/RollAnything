@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace RollTableExamples
 {
-    public class ZapCube : MonoBehaviour, IRollWeighted
+    public class ZapCube : MonoBehaviour, IRollWeighted, IZappable
     {
         [SerializeField] private int timesZapped = 0;
 
