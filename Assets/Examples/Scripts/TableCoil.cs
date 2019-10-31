@@ -70,8 +70,10 @@ namespace RollTableExamples
         /// <param name="damage"></param>
         public void ZapSomething(float damage = 0)
         {
-            RollEntry entry = _zappables.Roll();
-            Health healthObject = (Health) entry.MyObject;
+            if (_zappables.Count < 1)
+                return;
+            Health healthObject = _zappables.Roll<Health>();
+
             ZapLineEffect(healthObject.transform);
             if (Math.Abs(damage) < .01f)
                 damage = _defaultDamage;

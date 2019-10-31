@@ -40,7 +40,7 @@ public class IntervalEventFire : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(.2f);
+            yield return new WaitForSeconds(intervalTiming);
             intervalEvents.Invoke();
         }
     }

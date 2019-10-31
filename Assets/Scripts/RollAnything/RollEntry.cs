@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using System.Linq;
 using UnityEngine;
+using Object = UnityEngine.Object;
+
 
 namespace RollAnything
 {
@@ -57,7 +60,31 @@ namespace RollAnything
             Debug.LogError("No array to check for object");
             return false;
         }
+        
+        /// <summary>
+        /// Check if this entry either is or has a type
+        /// </summary>
+        /// <param name="checkType"></param>
+        /// <returns></returns>
+        public bool HasType(Type checkType)
+        {
+            Type objectType = MyObject.GetType();
+            if (checkType == objectType)
+                return true;
+            if (objectType == typeof(GameObject))
+            {
+                GameObject myGameObject = (GameObject)MyObject;
 
+                foreach (var c in myGameObject.GetComponents(checkType))
+                {
+                    if (c.GetType() == checkType)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
 
         public System.Type EntryType()
         {

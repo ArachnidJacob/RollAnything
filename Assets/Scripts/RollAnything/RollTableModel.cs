@@ -35,7 +35,7 @@ public class RollTableModel : TreeModel<RollEntry>
     {
         CalculateDropChance((List<RollEntry>) m_Data);
     }
-    
+
     /// <summary>
     /// Takes the list of rollentries and calculates the drop chance of each item in the list in relation to each other item.
     /// </summary>
@@ -57,8 +57,8 @@ public class RollTableModel : TreeModel<RollEntry>
     {
         Changed();
     }
-    
-    
+
+
     public int IndexOfItem(RollEntry re)
     {
         return m_Data.IndexOf(re);
@@ -76,6 +76,22 @@ public class RollTableModel : TreeModel<RollEntry>
 //            Debug.Log(drollObjects.Count + " objects to roll against");
         if (rollContext == null)
             rollContext = m_Data.ToList();
+
+        //Filter by types
+        if (type != null)
+        {
+            List<RollEntry> filteredRollContext = new List<RollEntry>();
+
+            foreach (RollEntry re in rollContext)
+            {
+                if (re.HasType(type))
+                    filteredRollContext.Add(re);
+            }
+
+            rollContext = filteredRollContext;
+        }
+
+
         if (rollContext.Count < 1) return null;
         if (rollContext.Count == 1)
         {
@@ -83,16 +99,15 @@ public class RollTableModel : TreeModel<RollEntry>
             // Debug.Log(firstObject + "is the entry",firstObject);
             return firstObject;
         }
-        
-        int allWeight = TotalWeight(); //_totalWeight(rollContext);
+
+
+        //Weighted Rolling algorithm.
+        int allWeight = TotalWeight(rollContext); //_totalWeight(rollContext);
 
         _lastRoll = Random.Range(1, allWeight + 1);
         _currentWeight = 0;
         for (int i = 0; i < rollContext.Count; i++)
         {
-//            if (rollContext[i] == null || rollContext[i].m_ObjectToRoll == null) // if its an empty entry, ignore it
-//                continue;
-
             RollEntry currentObject = rollContext[i];
 
             //Go through list, adding weights together, once we've surpassed the roll value, it gives us the weighted RollEntry
@@ -128,6 +143,8 @@ public class RollTableModel : TreeModel<RollEntry>
             return null;
         Object rolledObject = rollEntry.MyObject;
         Type storedType = rolledObject.GetType();
+
+        //TODO optimise for the fact that we recieve a legal thing from the RollEntry Roll
         if (typeof(T) == typeof(Component))
         {
             if (storedType == typeof(GameObject))

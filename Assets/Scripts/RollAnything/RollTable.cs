@@ -32,7 +32,7 @@ namespace RollAnything
             }
             set { _rollEntries = value; }
         }
-
+        
 
         private RollTableModel _tableModel;
 
@@ -69,7 +69,7 @@ namespace RollAnything
         {
             return TableModel.IndexOfItem(re);
         }
-
+        
         public bool Contains(Object o)
         {
             foreach (RollEntry re in _rollEntries)
@@ -80,10 +80,20 @@ namespace RollAnything
             return false;
         }
 
-        public RollEntry Roll(List<RollEntry> rollContext = null)
+        //We dont count the Root
+        public int Count => RollEntries.Count - 1;
+
+
+        public RollEntry Roll(List<RollEntry> rollContext = null, Type filterType = null)
         {
-            return TableModel.Roll();
+            return TableModel.Roll(rollContext,filterType);
         }
+        
+        public T Roll<T>(List<RollEntry> rollContext = null) where T:Object
+        {
+            return TableModel.Roll<T>(rollContext);
+        }
+
 
 
         public void AddObjects(Object[] objects)
@@ -108,7 +118,7 @@ namespace RollAnything
         }
 
 
-        protected int TotalWeight => TableModel.TotalWeight;
+        protected int TotalWeight => TableModel.TotalWeight();
     }
 }
 
