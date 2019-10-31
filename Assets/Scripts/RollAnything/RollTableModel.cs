@@ -1,19 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Security.Principal;
 using RollAnything;
 using UnityEngine;
 using UnityEngine.Animations;
+using Object = UnityEngine.Object;
+using Random = UnityEngine.Random;
 
 [System.Serializable]
-public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
+public class RollTableModel : TreeModel<RollEntry>
 {
     private int _lastRoll;
     private int _currentWeight;
-    public RollEntry<T> LastRolled;
+    public RollEntry LastRolled;
 
-    public RollTableModel(IList<RollEntry<T>> rollEntries)
+    public RollTableModel(IList<RollEntry> rollEntries)
     {
         SetData(rollEntries);
         CalculateDropChance();
@@ -21,18 +25,27 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
     }
 
 
-    public RollEntry<T> TestRoll()
+    public RollEntry TestRoll()
     {
-        return LastRolled = Roll(m_Data);
+        return LastRolled = Roll((List<RollEntry>) m_Data);
     }
 
 
     public void CalculateDropChance()
     {
-        int totWeight = TotalWeight;
+        CalculateDropChance((List<RollEntry>) m_Data);
+    }
+    
+    /// <summary>
+    /// Takes the list of rollentries and calculates the drop chance of each item in the list in relation to each other item.
+    /// </summary>
+    /// <param name="entries"></param>
+    public void CalculateDropChance(List<RollEntry> entries)
+    {
+        int totWeight = TotalWeight(entries);
 
 
-        foreach (RollEntry<T> re in m_Data)
+        foreach (RollEntry re in entries)
         {
             re.SetLocalDropChance(totWeight);
         }
@@ -44,14 +57,21 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
     {
         Changed();
     }
-
-    public int IndexOfItem(RollEntry<T> re)
+    
+    
+    public int IndexOfItem(RollEntry re)
     {
         return m_Data.IndexOf(re);
     }
 
 
-    public RollEntry<T> Roll(IList<RollEntry<T>> rollContext = null) // where T : Entry
+    /// <summary>
+    /// Base Rollentry roll, will filter against the input Type
+    /// </summary>
+    /// <param name="rollContext"></param>
+    /// <param name="type"></param>
+    /// <returns></returns>
+    public RollEntry Roll(List<RollEntry> rollContext = null, Type type = null) // where T : Entry
     {
 //            Debug.Log(drollObjects.Count + " objects to roll against");
         if (rollContext == null)
@@ -59,12 +79,12 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
         if (rollContext.Count < 1) return null;
         if (rollContext.Count == 1)
         {
-            RollEntry<T> firstObject = rollContext.First();
+            RollEntry firstObject = rollContext.First();
             // Debug.Log(firstObject + "is the entry",firstObject);
             return firstObject;
         }
-
-        int allWeight = TotalWeight; //_totalWeight(rollContext);
+        
+        int allWeight = TotalWeight(); //_totalWeight(rollContext);
 
         _lastRoll = Random.Range(1, allWeight + 1);
         _currentWeight = 0;
@@ -73,7 +93,7 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
 //            if (rollContext[i] == null || rollContext[i].m_ObjectToRoll == null) // if its an empty entry, ignore it
 //                continue;
 
-            RollEntry<T> currentObject = rollContext[i];
+            RollEntry currentObject = rollContext[i];
 
             //Go through list, adding weights together, once we've surpassed the roll value, it gives us the weighted RollEntry
             _currentWeight += currentObject.TotalWeight;
@@ -95,18 +115,56 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
         return null;
     }
 
-
-    public int TotalWeight
+    /// <summary>
+    /// Rolls for a type of object contained in the rollentries in the table
+    /// </summary>
+    /// <param name="rollContext"></param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    public T Roll<T>(List<RollEntry> rollContext = null) where T : Object
     {
-        get
+        RollEntry rollEntry = Roll(rollContext, typeof(T));
+        if (rollEntry == null)
+            return null;
+        Object rolledObject = rollEntry.MyObject;
+        Type storedType = rolledObject.GetType();
+        if (typeof(T) == typeof(Component))
         {
-            int weightTotal = 0;
-            foreach (RollEntry<T> re in m_Data)
+            if (storedType == typeof(GameObject))
             {
-                weightTotal += re.TotalWeight;
+                GameObject rolledGameObject = (GameObject) rolledObject;
+                var rolledGameObjectComponent = rolledGameObject.GetComponent<T>();
+                if (rolledGameObjectComponent != null)
+                {
+                    return rolledGameObjectComponent;
+                }
+                Debug.LogError(
+                    rolledGameObject.name + " does not have the component: " + typeof(T).ToString() + " attached.",
+                    rolledGameObject);
+                return null;
             }
-            return weightTotal;
+            Debug.LogError(
+                rolledObject.name + " is not a gameObject, and cannot have  " + typeof(T).ToString() + " attached.",
+                rolledObject);
+            return null;
         }
+
+
+        return (T) rolledObject;
+    }
+
+
+    public int TotalWeight(List<RollEntry> entries = null)
+    {
+        if (entries == null)
+            entries = (List<RollEntry>) m_Data;
+
+        int weightTotal = 0;
+        foreach (RollEntry re in entries)
+        {
+            weightTotal += re.TotalWeight;
+        }
+        return weightTotal;
     }
 
 
@@ -117,7 +175,7 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
     /// <param name="name"></param>
     /// <param name="parent"></param>
     /// <returns></returns>
-    RollEntry<T> NewEntry(T objectToRoll, string name, RollEntry<T> parent)
+    RollEntry NewEntry(Object objectToRoll, string name, RollEntry parent)
     {
         if (parent == null)
             parent = root;
@@ -132,7 +190,7 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
             weight = rollWeightedCast.GetRollWeight();
         }
 
-        return new RollEntry<T>(objectToRoll, name, parent.depth, GenerateUniqueID(), weight);
+        return new RollEntry(objectToRoll, name, parent.depth, GenerateUniqueID(), weight);
     }
 
 
@@ -142,7 +200,7 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
     /// <param name="objectToRoll"></param>
     /// <param name="parent"></param>
     /// <param name="index"></param>
-    public void AddObjectToTree(T objectToRoll, RollEntry<T> parent = null, int index = 0, string overrideName = "")
+    public void AddObjectToTree(Object objectToRoll, RollEntry parent = null, int index = 0, string overrideName = "")
     {
         var newEntry = NewEntry(objectToRoll, overrideName, parent);
 
@@ -156,7 +214,7 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
     /// <param name="objects"></param>
     /// <param name="parent"></param>
     /// <param name="index"></param>
-    public void AddObjectsToTree(T[] objects, RollEntry<T> parent = null, int index = 0)
+    public void AddObjectsToTree(Object[] objects, RollEntry parent = null, int index = 0)
     {
         if (parent == null)
             parent = root;
@@ -166,7 +224,7 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
     }
 
 
-    public void RemoveObject(T objectToRemove)
+    public void RemoveObject(Object objectToRemove)
     {
         var toRemove = m_Data.Where(re => re.HasObject(objectToRemove)).ToList();
 
@@ -174,7 +232,7 @@ public class RollTableModel<T> : TreeModel<RollEntry<T>> where T:Object
     }
 
 
-    public void RemoveObjects(T[] objectToRemove)
+    public void RemoveObjects(Object[] objectToRemove)
     {
         var toRemove = m_Data.Where(re => re.HasObject(objectToRemove)).ToList();
 

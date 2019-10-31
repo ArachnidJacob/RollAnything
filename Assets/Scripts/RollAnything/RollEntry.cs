@@ -6,16 +6,16 @@ using UnityEngine;
 namespace RollAnything
 {
     [System.Serializable]
-    public class RollEntry<T> : TreeElement where  T : Object
+    public class RollEntry : TreeElement
     {
-        public T MyObject;
+        public Object MyObject;
         public int Weight;
         public float localDropChance;
         public float totalDropChance;
         public int m_DropTimes;
 
 
-        public RollEntry(T targetMyObject, string name = "", int depth = 0, int id = 0, int weight = 1)
+        public RollEntry(Object targetMyObject, string name = "", int depth = 0, int id = 0, int weight = 1)
         {
             MyObject = targetMyObject;
             m_Name = name;
@@ -44,12 +44,12 @@ namespace RollAnything
         }
 
 
-        public bool HasObject(T o)
+        public bool HasObject(Object o)
         {
             return MyObject != null && MyObject.Equals(o);
         }
 
-        public bool HasObject(T[] oa)
+        public bool HasObject(Object[] oa)
         {
             if (MyObject == null)
                 return false;
