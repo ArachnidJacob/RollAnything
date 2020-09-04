@@ -129,11 +129,11 @@ namespace RollAnything
 
         RollEntry PropertyToRollEntry(SerializedProperty tableEntryProperty)
         {
-            Object rollObject = tableEntryProperty.FindPropertyRelative("MyObject").objectReferenceValue;
+            Object rollObject = tableEntryProperty.FindPropertyRelative("myObject").objectReferenceValue;
             string name = tableEntryProperty.FindPropertyRelative("m_Name").stringValue;
             int depth = tableEntryProperty.FindPropertyRelative("m_Depth").intValue;
             int id = tableEntryProperty.FindPropertyRelative("m_ID").intValue;
-            int weight = tableEntryProperty.FindPropertyRelative("Weight").intValue;
+            int weight = tableEntryProperty.FindPropertyRelative("weight").intValue;
 
 
 //            int guaranteeBonus = tableEntryProperty.FindPropertyRelative("m_GuaranteeBonus").intValue;
@@ -237,7 +237,7 @@ namespace RollAnything
             Rect testButtonRect = DivideRectHorizontal(toolBarRect, buttonDivision, 0);
 
             var style = "miniButton";
-            if (GUI.Button(testButtonRect, "Test Roll"))
+            if (GUI.Button(testButtonRect, "Test TableRoll"))
             {
                 RollTableTreeView.TestRoll();
             }

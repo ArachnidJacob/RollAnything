@@ -1,25 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Jacob\.Rider2018.2\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\Jacob\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Jacob\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_RollAnything.1665864308.00" t="ExcludeRecursive" />
-    <e p="E:\Projects\RollAnything\RollAnything" t="IncludeRecursive">
+    <e p="C:\Projects\RollAnything" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Editor" t="Include">
-          <e p="HiearchyIcons.cs" t="Include" />
           <e p="Inspector" t="Include">
-            <e p="RollTableEditor.cs" t="Include" />
-            <e p="SpawnableEntryPreview.cs" t="Include" />
-            <e p="TableHolderInspector.cs" t="Include" />
-          </e>
-          <e p="Window" t="Include">
-            <e p="RollTableWindow.cs" t="Include" />
+            <e p="RollTablePropertyDrawer.cs" t="Include" />
+            <e p="RollTableView.cs" t="Include" />
           </e>
         </e>
-        <e p="Scripts" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="RollAnything" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="RollEntry.cs" t="Include" />
+            <e p="RollingTools.cs" t="Include" />
+            <e p="RollInterfaces.cs" t="Include" />
+            <e p="RollTable.cs" t="Include" />
+            <e p="RollTableAsset.cs" t="Include" />
+            <e p="RollTableModel.cs" t="Include" />
+            <e p="TreeBaseClasses" t="Include">
+              <e p="TreeElement.cs" t="Include" />
+              <e p="TreeElementUtility.cs" t="Include" />
+              <e p="TreeModel.cs" t="Include" />
+              <e p="TreeViewWithTreeModel.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="RollTableExamples" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="EnemySpawner.cs" t="Include" />
+            <e p="ExampleInterfaces.cs" t="Include" />
+            <e p="Health.cs" t="Include" />
+            <e p="IntervalEventFire.cs" t="Include" />
+            <e p="Mover.cs" t="Include" />
+            <e p="NestedZapper.cs" t="Include" />
+            <e p="SpawnPoint.cs" t="Include" />
+            <e p="TableCoil.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Study" t="Include">
+          <e p="HiearchyIcons.cs" t="Include" />
+          <e p="MyTreeAsset.cs" t="Include" />
+          <e p="MyTreeAssetEditor.cs" t="Include" />
+          <e p="MyTreeElement.cs" t="Include" />
+          <e p="MyTreeElementGenerator.cs" t="Include" />
           <e p="RollTable" t="Include">
             <e p="AllChecksTrue.cs" t="Include" />
             <e p="Entry.cs" t="Include" />
@@ -41,25 +74,32 @@
           </e>
           <e p="SerializableSystemType.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="SpawnableEntryPreview.cs" t="Include" />
           <e p="SpiderTools.cs" t="Include" />
-        </e>
-        <e p="TutorialInfo" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="Editor" t="Include">
-              <e p="ReadmeEditor.cs" t="Include" />
-            </e>
-            <e p="Readme.cs" t="Include" />
+          <e p="TableEditor.cs" t="Include" />
+          <e p="TableHolderInspector.cs" t="Include" />
+          <e p="TreeViewExamples" t="Include">
+            <e p="CustomHeightTreeView.cs" t="Include" />
+            <e p="CustomHeightWindow.cs" t="Include" />
+            <e p="MultiColumnTreeView.cs" t="Include" />
+            <e p="MultiColumnWindow.cs" t="Include" />
+            <e p="SimpleTreeView.cs" t="Include" />
+            <e p="SimpleTreeViewWindow.cs" t="Include" />
+            <e p="TransformsTreeView.cs" t="Include" />
+            <e p="TransformsTreeViewWindow.cs" t="Include" />
+          </e>
+          <e p="Window" t="Include">
+            <e p="RollTableWindow.cs" t="Include" />
           </e>
         </e>
       </e>
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="RollAnything.sln" t="IncludeFlat" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
+    <e p="C:\Users\donth_000\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\donth_000\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RollAnything.-1690244685.00" t="ExcludeRecursive" />
   </component>
   <component name="RiderRiderContentModelStore">
     <excludedPaths>

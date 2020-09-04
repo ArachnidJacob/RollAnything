@@ -3,591 +3,86 @@
   <component name="ChangeListManager">
     <list default="true" id="b6c3b82f-1b5d-4104-80a2-8e4da20d67ab" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FUSProjectUsageTrigger">
-    <session id="1118552112">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="cs" value="432" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="C#" value="432" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="cs" value="18" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="C#" value="18" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49973103">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="RollTablePropertyDrawer.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-                  <folding>
-                    <marker date="1572479745879" expanded="false" signature="6:299" ph="..." />
-                    <marker date="1572479745879" expanded="true" signature="323:14822" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="429:12864" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="1049:1267" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="1075:1257" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="1384:1653" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="1410:1643" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="1744:2769" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="1770:2759" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="2845:3159" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="2871:3149" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="3208:3346" ph="/// Retrieves and initiatilizes the List for the model to use ... " />
-                    <marker date="1572479745879" expanded="true" signature="3380:4076" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="3758:3920" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="4154:4811" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="4908:5010" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="5075:5229" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="5321:5621" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="5347:5611" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="5464:5561" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="5724:7184" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="6145:7087" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="6217:7073" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="6504:6908" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="6640:6886" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="7105:7174" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="7280:7602" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="7654:8907" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="8033:8107" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="8593:8865" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="8954:9305" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="9315:9460" ph="/// Tree View Drawer ... " />
-                    <marker date="1572479745879" expanded="true" signature="9505:9792" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="9845:12858" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="10238:10313" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="10478:10555" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="11012:11310" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="11608:11808" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="11964:12166" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="12320:12536" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="12704:12814" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="12924:14820" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="12977:13089" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="13181:13240" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="13266:13982" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="13327:13972" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="13405:13958" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="14103:14814" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="14292:14804" ph="{...}" />
-                    <marker date="1572479745879" expanded="true" signature="14396:14790" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RollTableModel.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTableModel.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="407">
-                  <caret line="141" column="30" lean-forward="false" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
-                  <folding>
-                    <marker date="1572482886522" expanded="true" signature="6:311" ph="..." />
-                    <marker date="1572482886522" expanded="true" signature="385:8885" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="536:654" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="688:760" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="800:867" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="873:1070" ph="/// Takes the list of rollentries and calculates the drop chance of each item in the list in relation to each oth ... " />
-                    <marker date="1572482886522" expanded="true" signature="1131:1355" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="1227:1293" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="1386:1417" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="1460:1507" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="1514:1717" ph="/// Base Rollentry roll, will filter against the input Type ... " />
-                    <marker date="1572482886522" expanded="true" signature="1816:3727" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="2025:2332" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="2159:2274" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="2418:2595" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="2847:3528" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="3142:3518" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="3157:3342" ph="/* if (currentObject.m_GuaranteeDrop != 0) ... */" />
-                    <marker date="1572482886522" expanded="true" signature="3733:3954" ph="/// Rolls for a type of object contained in the rollentries in the table ... " />
-                    <marker date="1572482886522" expanded="true" signature="4028:5244" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="4386:5203" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="4446:4992" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="4672:4762" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="5305:5557" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="5460:5523" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="5564:5805" ph="/// new Entry Constructor to Add to the TreeModel properly ... " />
-                    <marker date="1572482886522" expanded="true" signature="5880:6361" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="6112:6262" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="6368:6574" ph="/// For adding a Unity Object to the tree directly ... " />
-                    <marker date="1572482886522" expanded="true" signature="6693:6850" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="6856:7056" ph="/// For Adding Unity Objects to the tree directly ... " />
-                    <marker date="1572482886522" expanded="true" signature="7147:7382" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="7436:7565" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="7622:7751" ph="{...}" />
-                    <marker date="1572482886522" expanded="true" signature="7758:8883" ph="/*    /// Increases the odds for all guaranteed drops in list to drop ... */" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="IntervalEventFire.cs" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Assets/IntervalEventFire.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="585">
-                  <caret line="42" column="58" lean-forward="false" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
-                  <folding>
-                    <marker date="1572483547354" expanded="false" signature="6:104" ph="..." />
-                    <marker date="1572483547354" expanded="true" signature="152:894" ph="{...}" />
-                    <marker date="1572483547354" expanded="true" signature="178:237" ph="{...}" />
-                    <marker date="1572483547354" expanded="true" signature="365:460" ph="{...}" />
-                    <marker date="1572483547354" expanded="true" signature="489:587" ph="{...}" />
-                    <marker date="1572483547354" expanded="true" signature="613:708" ph="{...}" />
-                    <marker date="1572483547354" expanded="true" signature="741:892" ph="{...}" />
-                    <marker date="1572483547354" expanded="true" signature="768:886" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RollTable.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTable.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="615">
-                  <caret line="82" column="32" lean-forward="false" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
-                  <folding>
-                    <marker date="1572483416010" expanded="false" signature="6:236" ph="..." />
-                    <marker date="1572483416010" expanded="true" signature="260:2920" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="308:2918" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="549:908" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="575:856" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="634:805" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="1005:1229" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="1031:1219" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="1258:1397" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="1435:1505" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="1548:1614" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="1661:1728" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="1776:1972" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="1837:1936" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="2149:2229" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="2314:2386" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="2438:2508" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="2552:2617" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="2663:2725" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="2783:2847" ph="{...}" />
-                    <marker date="1572483416010" expanded="true" signature="2923:5833" ph="/*        /// Returns TotalWeight ... */" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="TableCoil.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/TableCoil.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="546">
-                  <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-                  <folding>
-                    <marker date="1572483431093" expanded="true" signature="6:112" ph="..." />
-                    <marker date="1572483431093" expanded="true" signature="141:2727" ph="{...}" />
-                    <marker date="1572483431093" expanded="true" signature="233:2725" ph="{...}" />
-                    <marker date="1572483431093" expanded="true" signature="484:538" ph="{...}" />
-                    <marker date="1572483431093" expanded="true" signature="637:853" ph="{...}" />
-                    <marker date="1572483431093" expanded="true" signature="663:843" ph="{...}" />
-                    <marker date="1572483431093" expanded="true" signature="888:1194" ph="{...}" />
-                    <marker date="1572483431093" expanded="true" signature="1254:1520" ph="{...}" />
-                    <marker date="1572483431093" expanded="true" signature="1579:1849" ph="{...}" />
-                    <marker date="1572483431093" expanded="true" signature="1859:1982" ph="/// Zap a random zappable in my list ... " />
-                    <marker date="1572483431093" expanded="true" signature="2033:2351" ph="{...}" />
-                    <marker date="1572483431093" expanded="true" signature="2398:2719" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TreeModel.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeBaseClasses/TreeModel.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-                  <folding>
-                    <marker date="1572303289707" expanded="false" signature="6:85" ph="..." />
-                    <marker date="1572303289707" expanded="true" signature="114:746" ph="/* The TreeModel is a utility class working on a list of serializable TreeElements where the order and the depth  ... */" />
-                    <marker date="1572303289707" expanded="true" signature="795:7164" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="878:953" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="1029:1078" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="1102:1114" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="1151:1186" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="1213:1292" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="1332:1364" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="1412:1713" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="1748:1786" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="1830:2119" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="1932:2089" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="1979:2079" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="2181:2380" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="2260:2342" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="2450:2967" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="2630:2931" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="2724:2921" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="2836:2907" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="3022:3164" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="3215:3722" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="3532:3640" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="3810:4616" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="4372:4534" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="4649:5088" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="5167:5698" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="5803:7017" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="6483:6656" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="7047:7162" ph="{...}" />
-                    <marker date="1572303289707" expanded="true" signature="7167:9643" ph="Tests" />
-                    <marker date="1572303289707" expanded="true" signature="7182:9631" ph="/* TODO Move to Editor ... */" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RollEntry.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollEntry.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="786">
-                  <caret line="64" column="55" lean-forward="false" selection-start-line="64" selection-start-column="55" selection-end-line="64" selection-end-column="55" />
-                  <folding>
-                    <marker date="1572482494438" expanded="true" signature="6:146" ph="..." />
-                    <marker date="1572482494438" expanded="true" signature="171:2641" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="240:2639" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="524:743" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="776:831" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="895:1084" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="1147:1335" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="1377:1456" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="1500:1728" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="1746:1915" ph="/// Check if this entry either is or has a type ... " />
-                    <marker date="1572482494438" expanded="true" signature="1959:2508" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="2139:2472" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="2291:2458" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="2359:2440" ph="{...}" />
-                    <marker date="1572482494438" expanded="true" signature="2548:2633" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RollTableView.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTableView.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-                  <folding>
-                    <marker date="1572479848211" expanded="false" signature="6:309" ph="..." />
-                    <marker date="1572479848211" expanded="true" signature="372:17900" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="463:569" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="722:838" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="878:996" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="1024:1143" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="1213:1392" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="1440:1521" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="1676:2488" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="2125:2482" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="2285:2472" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="2369:2458" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="2642:3325" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="3332:3479" ph="/* Note we We only build the visible rows, only the backend has the full tree information. ... */" />
-                    <marker date="1572479848211" expanded="true" signature="3551:3659" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="3687:3796" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="3829:3887" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="3889:4156" ph="/* TreeViewItem&lt;RollEntry&gt; GetItemFromEntry(RollEntry rollentry) ... */" />
-                    <marker date="1572479848211" expanded="true" signature="4220:4275" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="4343:4700" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="4454:4556" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="4734:6023" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="5061:5944" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="5257:5934" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="5743:5920" ph="/* case SortOption.GuaranteeBonus: ... */" />
-                    <marker date="1572479848211" expanded="true" signature="6154:6977" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="6321:6892" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="6656:6782" ph="/* case SortOption.GuaranteeBonus: ... */" />
-                    <marker date="1572479848211" expanded="true" signature="7031:7271" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="7156:7265" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="7373:10792" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="7558:10786" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="7960:8179" ph="/* if (toggleRect.xMax &lt; cellRect.xMax) ... */" />
-                    <marker date="1572479848211" expanded="true" signature="8450:9912" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="8541:9719" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="8713:8933" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="8989:9168" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="9365:9547" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="9591:9697" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="9720:9894" ph="/* if (column == MyColumns.GuaranteeBonus) ... */" />
-                    <marker date="1572479848211" expanded="true" signature="9933:10739" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="10049:10237" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="10486:10624" ph="/* if (column == MyColumns.GuaranteeBonus) ... */" />
-                    <marker date="1572479848211" expanded="true" signature="10799:10823" ph="/* Rename ... */" />
-                    <marker date="1572479848211" expanded="true" signature="10881:11121" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="11184:11444" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="11300:11438" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="11529:11713" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="11719:11741" ph="/* Misc ... */" />
-                    <marker date="1572479848211" expanded="true" signature="11804:11837" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="11964:12311" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="12125:12231" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="12244:12305" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="12397:14381" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="12725:14329" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="12781:14319" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="13043:13479" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="13700:14070" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="14481:17898" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="14524:17615" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="14584:15150" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="15211:15586" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="15646:16156" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="16216:16566" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="16626:17058" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="17060:17605" ph="/* new MultiColumnHeaderState.Column ... */" />
-                    <marker date="1572479848211" expanded="true" signature="17933:18582" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="18066:18254" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="18095:18160" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="18173:18248" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="18394:18580" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="18423:18487" ph="{...}" />
-                    <marker date="1572479848211" expanded="true" signature="18500:18574" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Health.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/Health.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="32" />
-                  <folding>
-                    <marker date="1572391089724" expanded="false" signature="6:158" ph="..." />
-                    <marker date="1572391089724" expanded="true" signature="188:1030" ph="{...}" />
-                    <marker date="1572391089724" expanded="true" signature="219:257" ph="{...}" />
-                    <marker date="1572391089724" expanded="true" signature="291:346" ph="{...}" />
-                    <marker date="1572391089724" expanded="true" signature="400:1028" ph="{...}" />
-                    <marker date="1572391089724" expanded="true" signature="589:630" ph="{...}" />
-                    <marker date="1572391089724" expanded="true" signature="652:704" ph="{...}" />
-                    <marker date="1572391089724" expanded="true" signature="764:1022" ph="{...}" />
-                    <marker date="1572391089724" expanded="true" signature="871:974" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="EnemySpawner.cs" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/EnemySpawner.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-                  <folding>
-                    <marker date="1572483474068" expanded="false" signature="6:98" ph="..." />
-                    <marker date="1572483474068" expanded="true" signature="141:531" ph="{...}" />
-                    <marker date="1572483474068" expanded="true" signature="247:529" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SpawnPoint.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/SpawnPoint.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-                  <folding>
-                    <marker date="1572299453641" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1572299453641" expanded="true" signature="107:337" ph="{...}" />
-                    <marker date="1572299453641" expanded="true" signature="168:335" ph="{...}" />
-                    <marker date="1572299453641" expanded="true" signature="271:329" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ExampleInterfaces.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/ExampleInterfaces.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
-                  <folding>
-                    <marker date="1572299438430" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1572299438430" expanded="true" signature="107:174" ph="{...}" />
-                    <marker date="1572299438430" expanded="true" signature="140:172" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TreeElement.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeBaseClasses/TreeElement.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-                  <folding>
-                    <marker date="1570234670662" expanded="false" signature="6:66" ph="..." />
-                    <marker date="1570234670662" expanded="true" signature="108:1152" ph="{...}" />
-                    <marker date="1570234670662" expanded="true" signature="375:452" ph="{...}" />
-                    <marker date="1570234670662" expanded="true" signature="483:562" ph="{...}" />
-                    <marker date="1570234670662" expanded="true" signature="601:684" ph="{...}" />
-                    <marker date="1570234670662" expanded="true" signature="713:788" ph="{...}" />
-                    <marker date="1570234670662" expanded="true" signature="812:887" ph="{...}" />
-                    <marker date="1570234670662" expanded="true" signature="906:977" ph="{...}" />
-                    <marker date="1570234670662" expanded="true" signature="1003:1015" ph="{...}" />
-                    <marker date="1570234670662" expanded="true" signature="1071:1150" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RollInterfaces.cs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollInterfaces.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-                  <folding>
-                    <marker date="1571872999646" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1571872999646" expanded="true" signature="110:139" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>SetupDragAndDrop</find>
-      <find>TreeViewItem&lt;RollEntry&gt;</find>
-      <find>AddIte</find>
-      <find>AddItem</find>
-      <find>AddElement</find>
-      <find>GenerateUniqueID</find>
-      <find>GuaranteeBonus</find>
-      <find>OnDropDraggedElementsAtIndex</find>
-      <find>TreeModel</find>
-      <find>rollEntryList</find>
-      <find>Model</find>
-      <find>Changed</find>
-      <find>SetValueDirect</find>
-      <find>treeModel</find>
-      <find>RollTable</find>
-      <find>Add</find>
-      <find>AddElements</find>
-      <find>RollEntry(null, &quot;Root&quot;, -1, 0, 0)</find>
-      <find>RollEntry</find>
-      <find>RollEntry(</find>
-      <find>Remove</find>
-      <find>AddElemen</find>
-      <find>IZappable</find>
-      <find>RollTableModel</find>
-      <find>RollTableModel(</find>
-      <find>Weight</find>
-      <find>rollEntries</find>
-      <find>Contain</find>
-      <find>Roll</find>
-      <find>Roll(</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>RollAnything</replace>
-    </replaceStrings>
-  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTableAsset.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/a4/48b7bb26/TreeViewController.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/47/afd7afcb/List`1.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/Scripts/Mover.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/17/b5b0d8fe/Rect.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/e7/d49e9bc3/MultiColumnHeader.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/d7/0475d0af/Object.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/IntervalEventFire.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/2b/5fd6e448/SerializedProperty.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/79/63973216/Component.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/90/6602269e/Array.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollEntry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/78/6cb867a1/TreeView.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeBaseClasses/TreeElement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/Scripts/ZapCube.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollingTools.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/56/7718b1e5/GUILayout.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/eb/b98d7e5d/DragAndDrop.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/Scripts/ExampleInterfaces.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/5d/65e7af45/PropertyDrawer.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/69/c791faed/EditorGUI.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/68/eb74fb6f/TreeViewGUI.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollInterfaces.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTableView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/ff/62dd2931/TreeViewItem.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/16/59f9e4c6/DragAndDropVisualMode.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/Scripts/TableCoil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/96/9fc1e488/SearchField.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/77/93b3094c/EditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollableMono.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SpawnPoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeBaseClasses/TreeModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/9d/22ed3502/GUILayoutUtility.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/cc/dfc49a81/BaseVisualElementPanel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/4b/e264322e/EditorGUILayout.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTableModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollableObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/62/ff2d3064/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/a9/466a8d95/SerializedObject.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/599589BF-4CE2-4890-9B8A-14CBE4A2034E/01/56d4f9e0/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollInterfaces.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/4d/a2426316/InspectorElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTableModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/TreeBaseClasses/TreeModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/9d/59a51a69/GenericInspector.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/95/94d80c1d/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTableView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/5e/7403c5ab/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/2c/8c5c6554/RenderChain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/ff/62dd2931/TreeViewItem.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/71/c05a35be/PropertyHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/5d/65e7af45/PropertyDrawer.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/96/9fc1e488/SearchField.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/d4/c6e3b0d3/UnityEvent`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/SpawnPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/40/3dafdc5b/Panel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/69/c791faed/EditorGUI.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/IntervalEventFire.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/e7/d49e9bc3/MultiColumnHeader.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/17/b5b0d8fe/Rect.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/fd/001cbc26/VisualTreeUpdater.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Study/SerializableSystemType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/9d/22ed3502/GUILayoutUtility.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/eb/b98d7e5d/DragAndDrop.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Study/SpiderTools.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/16/c9bc97eb/EventDispatcherGate.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/16/59f9e4c6/DragAndDropVisualMode.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/44/271db19e/UIRRepaintUpdater.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/95/d7575cf5/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/47/afd7afcb/List`1.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/2b/5fd6e448/SerializedProperty.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/56/a5a455ff/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/78/6cb867a1/TreeView.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/NestedZapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Study/RollTable/Entry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/8c/dee0162a/CachedInvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/79/63973216/Component.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/1b/23ab6878/UnityEvent.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/52/8b5140bc/InvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/89/3cf309e5/UIRenderDevice.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FBB5ED17-EB6E-46C6-8000-0F8910EBB50C/2c/381756a4/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/57/55280e5b/RenderChainCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/ff/1ea89bd5/UIElementsUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Study/RollTable/Table.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/b4/2f3d0cf7/MouseCaptureDispatchingStrategy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/ff/e2460b8b/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/ea/9fcaaadf/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/08/6c710496/CallbackEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/a4/48b7bb26/TreeViewController.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/fb/87437901/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/0d/d664e206/PropertyDrawer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/29/c0eddacd/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/d7/0475d0af/Object.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/3f/3fa92625/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/90/6602269e/Array.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/56/7718b1e5/GUILayout.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/68/eb74fb6f/TreeViewGUI.cs" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/77/93b3094c/EditorWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeViewExamples/MultiColumnWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/BackendData/MyTreeAsset.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeViewExamples/TransformsTreeView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeViewExamples/CustomHeightTreeView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeViewExamples/CustomHeightWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/BackendData/MyTreeAssetEditor.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/4b/e264322e/EditorGUILayout.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/56/7718b1e5/GUILayout.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/a4/48b7bb26/TreeViewController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollTable/Table.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/ff/62dd2931/TreeViewItem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/Inspector/RollTableEditor.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/5d/65e7af45/PropertyDrawer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/RollableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/Inspector/RollTableEditor1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/RollableMono.cs" />
-        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/9d/22ed3502/GUILayoutUtility.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/96/9fc1e488/SearchField.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/69/c791faed/EditorGUI.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/e7/d49e9bc3/MultiColumnHeader.cs" />
@@ -607,96 +102,48 @@
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/79/63973216/Component.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/Scripts/ZapCube.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Zappable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Mover.cs" />
-        <option value="$PROJECT_DIR$/Assets/Examples/Scripts/ExampleInterfaces.cs" />
-        <option value="$PROJECT_DIR$/Assets/SpawnPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/Scripts/ZappableMonster.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeBaseClasses/TreeModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Health.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/Inspector/RollTableView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/RollEntry.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTableModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Examples/Scripts/TableCoil.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/Scripts/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/IntervalEventFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Mover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/Scripts/ExampleInterfaces.cs" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/1b/23ab6878/UnityEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTableModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Conductable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/Scripts/TableCoil.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollTableExamples/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/RollEntry.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeBaseClasses/TreeElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeBaseClasses/TreeModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollInterfaces.cs" />
+        <option value="$PROJECT_DIR$/Assets/SpawnPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/NestedTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/NestedTableComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/NestedZapper.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollEntry.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/EnemySpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/IntervalEventFire.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/TreeBaseClasses/TreeModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Study/RollTable/Entry.cs" />
+        <option value="$PROJECT_DIR$/Assets/Study/SpiderTools.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTableModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="SolutionExplorer" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="SolutionExplorer">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RollAnything (3 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Editor" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Editor" type="1045f7f1:UnityExplorerNode" />
-              <item name="Window" type="1045f7f1:UnityExplorerNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-hidden-items" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1TDpqU4PsH2RBubyx0ZWJ9NJ7WP" />
   <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -710,65 +157,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
-    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
-      <option name="PROJECT_PATH" value="" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="USE_MONO" value="0" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <envs />
-      <method />
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="8532">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="8532" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="43616">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="43616" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug">
-      <method />
-    </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Unity Debug.Attach to Unity Editor" />
-    </list>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
-      <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -801,76 +217,30 @@
       <workItem from="1572297639369" duration="8359000" />
       <workItem from="1572384201207" duration="3099000" />
       <workItem from="1572471339234" duration="8812000" />
+      <workItem from="1572555968093" duration="7491000" />
+      <workItem from="1572999715168" duration="1004000" />
+      <workItem from="1573003343110" duration="41000" />
+      <workItem from="1573004720431" duration="2259000" />
+      <workItem from="1573007002531" duration="2071000" />
+      <workItem from="1578104043688" duration="638000" />
+      <workItem from="1578166393001" duration="4743000" />
+      <workItem from="1579559943953" duration="11032000" />
+      <workItem from="1580067837870" duration="1774000" />
+      <workItem from="1581978416072" duration="8244000" />
+      <workItem from="1599252164787" duration="5516000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167884000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40341514" sideWeight="0.5033622" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.031770833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16596195" sideWeight="0.49663785" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40341514" sideWeight="0.5033622" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.031770833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16596195" sideWeight="0.49663785" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -879,584 +249,32 @@
           <properties exception="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollEntry.cs</url>
+          <line>73</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/RollAnything/RollEntry.cs" initialLine="70" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs</url>
+          <line>57</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs" initialLine="57">
+            <startOffsets>
+              <option value="1731" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1779" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="13" />
     </breakpoint-manager>
-    <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeViewExamples/MultiColumnWindow.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/a4/48b7bb26/TreeViewController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="276" column="16" lean-forward="false" selection-start-line="276" selection-start-column="16" selection-end-line="276" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/Inspector/TableEditor.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollTable/Tags/Tag.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollTable/Entry.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollTable/Table.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeViewExamples/MultiColumnTreeView.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/ff/62dd2931/TreeViewItem.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SerializableSystemType.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/5d/65e7af45/PropertyDrawer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTableEditor1.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollableMono.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollableObject.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/96/9fc1e488/SearchField.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="114" column="18" lean-forward="false" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/69/c791faed/EditorGUI.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="9549" column="13" lean-forward="false" selection-start-line="9549" selection-start-column="13" selection-end-line="9549" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/e7/d49e9bc3/MultiColumnHeader.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="261" column="16" lean-forward="false" selection-start-line="261" selection-start-column="16" selection-end-line="261" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/17/b5b0d8fe/Rect.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/9d/22ed3502/GUILayoutUtility.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="486" column="23" lean-forward="false" selection-start-line="486" selection-start-column="23" selection-end-line="486" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/eb/b98d7e5d/DragAndDrop.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="76" column="23" lean-forward="false" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/16/59f9e4c6/DragAndDropVisualMode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTableEditor.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeDataModel/TreeElementUtility.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/47/afd7afcb/List`1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="793" column="16" lean-forward="false" selection-start-line="793" selection-start-column="16" selection-end-line="793" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTableAsset.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeDataModel/TreeElement.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/2b/5fd6e448/SerializedProperty.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/BackendData/TreeViewWithTreeModel.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollingTools.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeDataModel/TreeModel.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/78/6cb867a1/TreeView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="1311" column="6" lean-forward="false" selection-start-line="1311" selection-start-column="6" selection-end-line="1311" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AddSelfToTargetTable.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/TableCoil.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/79/63973216/Component.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="28" lean-forward="false" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/Zappable.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollInterfaces.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <marker date="1571872999646" expanded="false" signature="6:78" ph="..." />
-            <marker date="1571872999646" expanded="true" signature="110:139" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/ExampleInterfaces.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
-          <folding>
-            <marker date="1572299438430" expanded="false" signature="6:78" ph="..." />
-            <marker date="1572299438430" expanded="true" signature="107:174" ph="{...}" />
-            <marker date="1572299438430" expanded="true" signature="140:172" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/ZapCube.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <marker date="1572046064686" expanded="false" signature="6:121" ph="..." />
-            <marker date="1572046064686" expanded="true" signature="219:2072" ph="{...}" />
-            <marker date="1572046064686" expanded="true" signature="351:566" ph="{...}" />
-            <marker date="1572046064686" expanded="true" signature="377:556" ph="{...}" />
-            <marker date="1572046064686" expanded="true" signature="593:725" ph="{...}" />
-            <marker date="1572046064686" expanded="true" signature="847:1038" ph="{...}" />
-            <marker date="1572046064686" expanded="true" signature="873:1028" ph="{...}" />
-            <marker date="1572046064686" expanded="true" signature="1083:1185" ph="{...}" />
-            <marker date="1572046064686" expanded="true" signature="1233:1810" ph="{...}" />
-            <marker date="1572046064686" expanded="true" signature="1413:1766" ph="{...}" />
-            <marker date="1572046064686" expanded="true" signature="1846:2066" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeBaseClasses/TreeElement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <marker date="1570234670662" expanded="false" signature="6:66" ph="..." />
-            <marker date="1570234670662" expanded="true" signature="108:1152" ph="{...}" />
-            <marker date="1570234670662" expanded="true" signature="375:452" ph="{...}" />
-            <marker date="1570234670662" expanded="true" signature="483:562" ph="{...}" />
-            <marker date="1570234670662" expanded="true" signature="601:684" ph="{...}" />
-            <marker date="1570234670662" expanded="true" signature="713:788" ph="{...}" />
-            <marker date="1570234670662" expanded="true" signature="812:887" ph="{...}" />
-            <marker date="1570234670662" expanded="true" signature="906:977" ph="{...}" />
-            <marker date="1570234670662" expanded="true" signature="1003:1015" ph="{...}" />
-            <marker date="1570234670662" expanded="true" signature="1071:1150" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/ZappableMonster.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/Mover.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeBaseClasses/TreeModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <marker date="1572303289707" expanded="false" signature="6:85" ph="..." />
-            <marker date="1572303289707" expanded="true" signature="114:746" ph="/* The TreeModel is a utility class working on a list of serializable TreeElements where the order and the depth  ... */" />
-            <marker date="1572303289707" expanded="true" signature="795:7164" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="878:953" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="1029:1078" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="1102:1114" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="1151:1186" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="1213:1292" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="1332:1364" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="1412:1713" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="1748:1786" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="1830:2119" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="1932:2089" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="1979:2079" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="2181:2380" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="2260:2342" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="2450:2967" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="2630:2931" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="2724:2921" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="2836:2907" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="3022:3164" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="3215:3722" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="3532:3640" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="3810:4616" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="4372:4534" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="4649:5088" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="5167:5698" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="5803:7017" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="6483:6656" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="7047:7162" ph="{...}" />
-            <marker date="1572303289707" expanded="true" signature="7167:9643" ph="Tests" />
-            <marker date="1572303289707" expanded="true" signature="7182:9631" ph="/* TODO Move to Editor ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <marker date="1572479745879" expanded="false" signature="6:299" ph="..." />
-            <marker date="1572479745879" expanded="true" signature="323:14822" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="429:12864" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="1049:1267" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="1075:1257" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="1384:1653" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="1410:1643" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="1744:2769" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="1770:2759" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="2845:3159" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="2871:3149" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="3208:3346" ph="/// Retrieves and initiatilizes the List for the model to use ... " />
-            <marker date="1572479745879" expanded="true" signature="3380:4076" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="3758:3920" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="4154:4811" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="4908:5010" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="5075:5229" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="5321:5621" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="5347:5611" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="5464:5561" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="5724:7184" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="6145:7087" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="6217:7073" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="6504:6908" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="6640:6886" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="7105:7174" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="7280:7602" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="7654:8907" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="8033:8107" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="8593:8865" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="8954:9305" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="9315:9460" ph="/// Tree View Drawer ... " />
-            <marker date="1572479745879" expanded="true" signature="9505:9792" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="9845:12858" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="10238:10313" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="10478:10555" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="11012:11310" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="11608:11808" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="11964:12166" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="12320:12536" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="12704:12814" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="12924:14820" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="12977:13089" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="13181:13240" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="13266:13982" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="13327:13972" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="13405:13958" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="14103:14814" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="14292:14804" ph="{...}" />
-            <marker date="1572479745879" expanded="true" signature="14396:14790" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/SpawnPoint.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <marker date="1572299453641" expanded="false" signature="6:78" ph="..." />
-            <marker date="1572299453641" expanded="true" signature="107:337" ph="{...}" />
-            <marker date="1572299453641" expanded="true" signature="168:335" ph="{...}" />
-            <marker date="1572299453641" expanded="true" signature="271:329" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/Health.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <marker date="1572391089724" expanded="false" signature="6:158" ph="..." />
-            <marker date="1572391089724" expanded="true" signature="188:1030" ph="{...}" />
-            <marker date="1572391089724" expanded="true" signature="219:257" ph="{...}" />
-            <marker date="1572391089724" expanded="true" signature="291:346" ph="{...}" />
-            <marker date="1572391089724" expanded="true" signature="400:1028" ph="{...}" />
-            <marker date="1572391089724" expanded="true" signature="589:630" ph="{...}" />
-            <marker date="1572391089724" expanded="true" signature="652:704" ph="{...}" />
-            <marker date="1572391089724" expanded="true" signature="764:1022" ph="{...}" />
-            <marker date="1572391089724" expanded="true" signature="871:974" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTableView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="49" column="1" lean-forward="false" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <marker date="1572479848211" expanded="false" signature="6:309" ph="..." />
-            <marker date="1572479848211" expanded="true" signature="372:17900" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="463:569" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="722:838" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="878:996" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="1024:1143" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="1213:1392" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="1440:1521" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="1676:2488" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="2125:2482" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="2285:2472" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="2369:2458" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="2642:3325" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="3332:3479" ph="/* Note we We only build the visible rows, only the backend has the full tree information. ... */" />
-            <marker date="1572479848211" expanded="true" signature="3551:3659" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="3687:3796" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="3829:3887" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="3889:4156" ph="/* TreeViewItem&lt;RollEntry&gt; GetItemFromEntry(RollEntry rollentry) ... */" />
-            <marker date="1572479848211" expanded="true" signature="4220:4275" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="4343:4700" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="4454:4556" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="4734:6023" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="5061:5944" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="5257:5934" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="5743:5920" ph="/* case SortOption.GuaranteeBonus: ... */" />
-            <marker date="1572479848211" expanded="true" signature="6154:6977" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="6321:6892" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="6656:6782" ph="/* case SortOption.GuaranteeBonus: ... */" />
-            <marker date="1572479848211" expanded="true" signature="7031:7271" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="7156:7265" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="7373:10792" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="7558:10786" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="7960:8179" ph="/* if (toggleRect.xMax &lt; cellRect.xMax) ... */" />
-            <marker date="1572479848211" expanded="true" signature="8450:9912" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="8541:9719" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="8713:8933" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="8989:9168" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="9365:9547" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="9591:9697" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="9720:9894" ph="/* if (column == MyColumns.GuaranteeBonus) ... */" />
-            <marker date="1572479848211" expanded="true" signature="9933:10739" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="10049:10237" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="10486:10624" ph="/* if (column == MyColumns.GuaranteeBonus) ... */" />
-            <marker date="1572479848211" expanded="true" signature="10799:10823" ph="/* Rename ... */" />
-            <marker date="1572479848211" expanded="true" signature="10881:11121" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="11184:11444" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="11300:11438" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="11529:11713" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="11719:11741" ph="/* Misc ... */" />
-            <marker date="1572479848211" expanded="true" signature="11804:11837" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="11964:12311" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="12125:12231" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="12244:12305" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="12397:14381" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="12725:14329" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="12781:14319" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="13043:13479" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="13700:14070" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="14481:17898" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="14524:17615" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="14584:15150" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="15211:15586" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="15646:16156" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="16216:16566" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="16626:17058" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="17060:17605" ph="/* new MultiColumnHeaderState.Column ... */" />
-            <marker date="1572479848211" expanded="true" signature="17933:18582" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="18066:18254" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="18095:18160" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="18173:18248" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="18394:18580" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="18423:18487" ph="{...}" />
-            <marker date="1572479848211" expanded="true" signature="18500:18574" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollEntry.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="64" column="55" lean-forward="false" selection-start-line="64" selection-start-column="55" selection-end-line="64" selection-end-column="55" />
-          <folding>
-            <marker date="1572482494438" expanded="true" signature="6:146" ph="..." />
-            <marker date="1572482494438" expanded="true" signature="171:2641" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="240:2639" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="524:743" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="776:831" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="895:1084" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="1147:1335" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="1377:1456" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="1500:1728" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="1746:1915" ph="/// Check if this entry either is or has a type ... " />
-            <marker date="1572482494438" expanded="true" signature="1959:2508" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="2139:2472" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="2291:2458" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="2359:2440" ph="{...}" />
-            <marker date="1572482494438" expanded="true" signature="2548:2633" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTableModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="141" column="30" lean-forward="false" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
-          <folding>
-            <marker date="1572482886522" expanded="true" signature="6:311" ph="..." />
-            <marker date="1572482886522" expanded="true" signature="385:8885" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="536:654" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="688:760" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="800:867" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="873:1070" ph="/// Takes the list of rollentries and calculates the drop chance of each item in the list in relation to each oth ... " />
-            <marker date="1572482886522" expanded="true" signature="1131:1355" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="1227:1293" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="1386:1417" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="1460:1507" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="1514:1717" ph="/// Base Rollentry roll, will filter against the input Type ... " />
-            <marker date="1572482886522" expanded="true" signature="1816:3727" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="2025:2332" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="2159:2274" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="2418:2595" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="2847:3528" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="3142:3518" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="3157:3342" ph="/* if (currentObject.m_GuaranteeDrop != 0) ... */" />
-            <marker date="1572482886522" expanded="true" signature="3733:3954" ph="/// Rolls for a type of object contained in the rollentries in the table ... " />
-            <marker date="1572482886522" expanded="true" signature="4028:5244" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="4386:5203" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="4446:4992" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="4672:4762" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="5305:5557" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="5460:5523" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="5564:5805" ph="/// new Entry Constructor to Add to the TreeModel properly ... " />
-            <marker date="1572482886522" expanded="true" signature="5880:6361" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="6112:6262" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="6368:6574" ph="/// For adding a Unity Object to the tree directly ... " />
-            <marker date="1572482886522" expanded="true" signature="6693:6850" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="6856:7056" ph="/// For Adding Unity Objects to the tree directly ... " />
-            <marker date="1572482886522" expanded="true" signature="7147:7382" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="7436:7565" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="7622:7751" ph="{...}" />
-            <marker date="1572482886522" expanded="true" signature="7758:8883" ph="/*    /// Increases the odds for all guaranteed drops in list to drop ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/RollAnything/RollTable.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="82" column="32" lean-forward="false" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
-          <folding>
-            <marker date="1572483416010" expanded="false" signature="6:236" ph="..." />
-            <marker date="1572483416010" expanded="true" signature="260:2920" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="308:2918" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="549:908" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="575:856" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="634:805" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="1005:1229" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="1031:1219" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="1258:1397" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="1435:1505" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="1548:1614" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="1661:1728" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="1776:1972" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="1837:1936" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="2149:2229" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="2314:2386" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="2438:2508" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="2552:2617" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="2663:2725" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="2783:2847" ph="{...}" />
-            <marker date="1572483416010" expanded="true" signature="2923:5833" ph="/*        /// Returns TotalWeight ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/TableCoil.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
-          <folding>
-            <marker date="1572483431093" expanded="true" signature="6:112" ph="..." />
-            <marker date="1572483431093" expanded="true" signature="141:2727" ph="{...}" />
-            <marker date="1572483431093" expanded="true" signature="233:2725" ph="{...}" />
-            <marker date="1572483431093" expanded="true" signature="484:538" ph="{...}" />
-            <marker date="1572483431093" expanded="true" signature="637:853" ph="{...}" />
-            <marker date="1572483431093" expanded="true" signature="663:843" ph="{...}" />
-            <marker date="1572483431093" expanded="true" signature="888:1194" ph="{...}" />
-            <marker date="1572483431093" expanded="true" signature="1254:1520" ph="{...}" />
-            <marker date="1572483431093" expanded="true" signature="1579:1849" ph="{...}" />
-            <marker date="1572483431093" expanded="true" signature="1859:1982" ph="/// Zap a random zappable in my list ... " />
-            <marker date="1572483431093" expanded="true" signature="2033:2351" ph="{...}" />
-            <marker date="1572483431093" expanded="true" signature="2398:2719" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Examples/Scripts/EnemySpawner.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <marker date="1572483474068" expanded="false" signature="6:98" ph="..." />
-            <marker date="1572483474068" expanded="true" signature="141:531" ph="{...}" />
-            <marker date="1572483474068" expanded="true" signature="247:529" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/IntervalEventFire.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="42" column="58" lean-forward="false" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
-          <folding>
-            <marker date="1572483547354" expanded="false" signature="6:104" ph="..." />
-            <marker date="1572483547354" expanded="true" signature="152:894" ph="{...}" />
-            <marker date="1572483547354" expanded="true" signature="178:237" ph="{...}" />
-            <marker date="1572483547354" expanded="true" signature="365:460" ph="{...}" />
-            <marker date="1572483547354" expanded="true" signature="489:587" ph="{...}" />
-            <marker date="1572483547354" expanded="true" signature="613:708" ph="{...}" />
-            <marker date="1572483547354" expanded="true" signature="741:892" ph="{...}" />
-            <marker date="1572483547354" expanded="true" signature="768:886" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <reveal-manager>
+      <revealed-members>
+        <RevealItemInfo typeName="RollAnything.RollResult" fieldName="rolledEntries" />
+        <RevealItemInfo typeName="UnityEngine.Events.UnityEvent" fieldName="m_PersistentCalls" />
+      </revealed-members>
+    </reveal-manager>
   </component>
 </project>

@@ -191,7 +191,7 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
                     orderedQuery = orderedQuery.ThenBy(l => l.data.name, ascending);
                     break;
                 case SortOption.Weight:
-                    orderedQuery = orderedQuery.ThenBy(l => l.data.Weight, ascending);
+                    orderedQuery = orderedQuery.ThenBy(l => l.data.weight, ascending);
                     break;
                 case SortOption.DropChance:
                     orderedQuery = orderedQuery.ThenBy(l => l.data.localDropChance, ascending);
@@ -215,7 +215,7 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
             case SortOption.Name:
                 return myTypes.Order(l => l.data.name, ascending);
             case SortOption.Weight:
-                return myTypes.Order(l => l.data.Weight, ascending);
+                return myTypes.Order(l => l.data.weight, ascending);
             case SortOption.DropChance:
                 return myTypes.Order(l => l.data.localDropChance, ascending);
 //            case SortOption.GuaranteeBonus:
@@ -279,13 +279,13 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
                         cellRect.xMin += 5f; // When showing controls make some extra spacing
                         if (column == MyColumns.Object)
                         {
-                            item.data.MyObject = EditorGUI.ObjectField(cellRect, item.data.MyObject,
+                            item.data.myObject = EditorGUI.ObjectField(cellRect, item.data.myObject,
                                 typeof(UnityEngine.Object), true);
                         }
                         if (column == MyColumns.Weight)
                         {
-                            item.data.Weight =
-                                EditorGUI.IntField(cellRect, item.data.Weight);
+                            item.data.weight =
+                                EditorGUI.IntField(cellRect, item.data.weight);
                         }
                         //TODO DropChance Direct edit : half reduces entire tree proportionally, half increases m_Weight proportionately
                         if (column == MyColumns.DropChance)
@@ -307,12 +307,12 @@ public class RollTableView : TreeViewWithTreeModel<RollEntry>
                     string value = "Missing";
                     if (column == MyColumns.Object)
                     {
-                        if (item.data != null && item.data.MyObject != null)
-                            value = item.data.MyObject.ToString();
+                        if (item.data != null && item.data.myObject != null)
+                            value = item.data.myObject.ToString();
                     }
 
                     if (column == MyColumns.Weight)
-                        value = item.data.Weight.ToString("f5");
+                        value = item.data.weight.ToString("f5");
                     if (column == MyColumns.DropChance)
                         value = item.data.localDropChance.ToString("f5");
 //                    if (column == MyColumns.GuaranteeBonus)

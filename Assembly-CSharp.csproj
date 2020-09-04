@@ -5,7 +5,6 @@
     <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
     <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
     <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -57,80 +56,59 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Examples\Scripts\EnemySpawner.cs" />
-    <Compile Include="Assets\Examples\Scripts\ExampleInterfaces.cs" />
-    <Compile Include="Assets\Examples\Scripts\Health.cs" />
-    <Compile Include="Assets\Examples\Scripts\Mover.cs" />
-    <Compile Include="Assets\Examples\Scripts\TableCoil.cs" />
-    <Compile Include="Assets\Examples\Scripts\ZapCube.cs" />
-    <Compile Include="Assets\IntervalEventFire.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\AddSelfToTargetTable.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\RollEntry.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\RollInterfaces.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\RollTable.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\RollTableAsset.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\RollTableModel.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\RollableMono.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\RollableObject.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\RollingTools.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\TreeBaseClasses\TreeElement.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\TreeBaseClasses\TreeElementUtility.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\TreeBaseClasses\TreeModel.cs" />
-    <Compile Include="Assets\Scripts\RollAnything\TreeBaseClasses\TreeViewWithTreeModel.cs" />
-    <Compile Include="Assets\Scripts\Study\HiearchyIcons.cs" />
-    <Compile Include="Assets\Scripts\Study\MyTreeAsset.cs" />
-    <Compile Include="Assets\Scripts\Study\MyTreeAssetEditor.cs" />
-    <Compile Include="Assets\Scripts\Study\MyTreeElement.cs" />
-    <Compile Include="Assets\Scripts\Study\MyTreeElementGenerator.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\AllChecksTrue.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\Entry.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\GlobalTableLists.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\NullEntry.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\OrientCheck.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\RandomSpotFinder.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\RaycastCheck.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\SpawnCheck.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\SphereCheck.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\Table.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\TableHolder.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\Tags\DepthTag.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\Tags\InclusiveTag.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\Tags\Tag.cs" />
-    <Compile Include="Assets\Scripts\Study\RollTable\Tags\ZoneTag.cs" />
-    <Compile Include="Assets\Scripts\Study\SerializableSystemType.cs" />
-    <Compile Include="Assets\Scripts\Study\SimpleCameraController.cs" />
-    <Compile Include="Assets\Scripts\Study\SpawnableEntryPreview.cs" />
-    <Compile Include="Assets\Scripts\Study\SpiderTools.cs" />
-    <Compile Include="Assets\Scripts\Study\TableEditor.cs" />
-    <Compile Include="Assets\Scripts\Study\TableHolderInspector.cs" />
-    <Compile Include="Assets\Scripts\Study\TreeViewExamples\CustomHeightTreeView.cs" />
-    <Compile Include="Assets\Scripts\Study\TreeViewExamples\CustomHeightWindow.cs" />
-    <Compile Include="Assets\Scripts\Study\TreeViewExamples\MultiColumnTreeView.cs" />
-    <Compile Include="Assets\Scripts\Study\TreeViewExamples\MultiColumnWindow.cs" />
-    <Compile Include="Assets\Scripts\Study\TreeViewExamples\SimpleTreeView.cs" />
-    <Compile Include="Assets\Scripts\Study\TreeViewExamples\SimpleTreeViewWindow.cs" />
-    <Compile Include="Assets\Scripts\Study\TreeViewExamples\TransformsTreeView.cs" />
-    <Compile Include="Assets\Scripts\Study\TreeViewExamples\TransformsTreeViewWindow.cs" />
-    <Compile Include="Assets\Scripts\Study\Window\RollTableWindow.cs" />
-    <Compile Include="Assets\SpawnPoint.cs" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <Compile Include="Assets\RollAnything\Scripts\RollEntry.cs" />
+    <Compile Include="Assets\RollAnything\Scripts\RollInterfaces.cs" />
+    <Compile Include="Assets\RollAnything\Scripts\RollTable.cs" />
+    <Compile Include="Assets\RollAnything\Scripts\RollTableAsset.cs" />
+    <Compile Include="Assets\RollAnything\Scripts\RollTableModel.cs" />
+    <Compile Include="Assets\RollAnything\Scripts\RollingTools.cs" />
+    <Compile Include="Assets\RollAnything\Scripts\TreeBaseClasses\TreeElement.cs" />
+    <Compile Include="Assets\RollAnything\Scripts\TreeBaseClasses\TreeElementUtility.cs" />
+    <Compile Include="Assets\RollAnything\Scripts\TreeBaseClasses\TreeModel.cs" />
+    <Compile Include="Assets\RollAnything\Scripts\TreeBaseClasses\TreeViewWithTreeModel.cs" />
+    <Compile Include="Assets\RollTableExamples\Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\RollTableExamples\Scripts\ExampleInterfaces.cs" />
+    <Compile Include="Assets\RollTableExamples\Scripts\Health.cs" />
+    <Compile Include="Assets\RollTableExamples\Scripts\IntervalEventFire.cs" />
+    <Compile Include="Assets\RollTableExamples\Scripts\Mover.cs" />
+    <Compile Include="Assets\RollTableExamples\Scripts\NestedZapper.cs" />
+    <Compile Include="Assets\RollTableExamples\Scripts\SpawnPoint.cs" />
+    <Compile Include="Assets\RollTableExamples\Scripts\TableCoil.cs" />
+    <Compile Include="Assets\Study\HiearchyIcons.cs" />
+    <Compile Include="Assets\Study\MyTreeAsset.cs" />
+    <Compile Include="Assets\Study\MyTreeAssetEditor.cs" />
+    <Compile Include="Assets\Study\MyTreeElement.cs" />
+    <Compile Include="Assets\Study\MyTreeElementGenerator.cs" />
+    <Compile Include="Assets\Study\RollTable\AllChecksTrue.cs" />
+    <Compile Include="Assets\Study\RollTable\Entry.cs" />
+    <Compile Include="Assets\Study\RollTable\GlobalTableLists.cs" />
+    <Compile Include="Assets\Study\RollTable\NullEntry.cs" />
+    <Compile Include="Assets\Study\RollTable\OrientCheck.cs" />
+    <Compile Include="Assets\Study\RollTable\RandomSpotFinder.cs" />
+    <Compile Include="Assets\Study\RollTable\RaycastCheck.cs" />
+    <Compile Include="Assets\Study\RollTable\SpawnCheck.cs" />
+    <Compile Include="Assets\Study\RollTable\SphereCheck.cs" />
+    <Compile Include="Assets\Study\RollTable\Table.cs" />
+    <Compile Include="Assets\Study\RollTable\TableHolder.cs" />
+    <Compile Include="Assets\Study\RollTable\Tags\DepthTag.cs" />
+    <Compile Include="Assets\Study\RollTable\Tags\InclusiveTag.cs" />
+    <Compile Include="Assets\Study\RollTable\Tags\Tag.cs" />
+    <Compile Include="Assets\Study\RollTable\Tags\ZoneTag.cs" />
+    <Compile Include="Assets\Study\SerializableSystemType.cs" />
+    <Compile Include="Assets\Study\SimpleCameraController.cs" />
+    <Compile Include="Assets\Study\SpawnableEntryPreview.cs" />
+    <Compile Include="Assets\Study\SpiderTools.cs" />
+    <Compile Include="Assets\Study\TableEditor.cs" />
+    <Compile Include="Assets\Study\TableHolderInspector.cs" />
+    <Compile Include="Assets\Study\TreeViewExamples\CustomHeightTreeView.cs" />
+    <Compile Include="Assets\Study\TreeViewExamples\CustomHeightWindow.cs" />
+    <Compile Include="Assets\Study\TreeViewExamples\MultiColumnTreeView.cs" />
+    <Compile Include="Assets\Study\TreeViewExamples\MultiColumnWindow.cs" />
+    <Compile Include="Assets\Study\TreeViewExamples\SimpleTreeView.cs" />
+    <Compile Include="Assets\Study\TreeViewExamples\SimpleTreeViewWindow.cs" />
+    <Compile Include="Assets\Study\TreeViewExamples\TransformsTreeView.cs" />
+    <Compile Include="Assets\Study\TreeViewExamples\TransformsTreeViewWindow.cs" />
+    <Compile Include="Assets\Study\Window\RollTableWindow.cs" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
       <HintPath>C:/Projects/RollAnything/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
