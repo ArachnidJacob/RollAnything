@@ -16,7 +16,6 @@ namespace RollTableExamples
         [SerializeField] protected LineRenderer _zapLine;
 
 
-
         private SphereCollider mySphereCollider;
 
         private SphereCollider MySphereCollider
@@ -50,20 +49,19 @@ namespace RollTableExamples
         {
             if (_zappables.Count < 1)
                 return;
-            RollResult rollResult = new RollResult(_zappables);
-            Health healthInstance = _zappables.Roll<Health>(rollResult);
 
-            if (healthInstance == null)
-            {
-                _zappables.RemoveEntry(rollResult.FinalEntry());
-                return;
-            }
-            Debug.LogFormat("Zapped {0}, bounced {1} times.", healthInstance.name, rollResult.rolledEntries.Count);
-            ZapLineEffect(rollResult.GetResultObjectsOfType<Health>());
-            
+            Health healthInstance = _zappables.Roll<Health>(null, NotRecentlyZapped);
+
+            ZapLineEffect(new List<Health>() {healthInstance});
+
             if (Math.Abs(damage) < .01f)
                 damage = _defaultDamage;
             healthInstance.Damage(damage);
+        }
+
+        bool NotRecentlyZapped(RollEntry entry)
+        {
+            return entry.GetContainedClass<Health>().RecentlyDamaged;
         }
 
         public void OnTriggerEnter(Collider otherCollider)
@@ -85,7 +83,7 @@ namespace RollTableExamples
                 return;
             _zappables.RemoveObject(otherHealth);
         }
-        
+
         void Start()
         {
             InitSphereCollider();
@@ -95,21 +93,18 @@ namespace RollTableExamples
         {
             int entryLength = rolledHealths.Count;
 
-            LineRenderer zapLineInstance = Instantiate<LineRenderer>(_zapLine, transform.position, transform.rotation);
-            zapLineInstance.positionCount = entryLength+1; // Ensure we have a base position
+            LineRenderer zapLineInstance = Instantiate(_zapLine, transform.position, transform.rotation);
+            zapLineInstance.positionCount = entryLength + 1; // Ensure we have a base position
             zapLineInstance.SetPosition(0, transform.position);
             //skip first entry because first pos is always transform
             for (int i = 0; i < entryLength; i++)
             {
                 Health target = rolledHealths[i];
 
-                zapLineInstance.SetPosition(i+1, target.transform.position);
-                
+                zapLineInstance.SetPosition(i + 1, target.transform.position);
             }
-            
+
             Destroy(zapLineInstance.gameObject, 0.1f);
         }
-
-
     }
 }

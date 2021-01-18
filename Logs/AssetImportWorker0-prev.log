@@ -1,0 +1,215 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.0f1 (3721df5a8b28) revision 3613151'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16333 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Dev\Versions\2020.2.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Project/RollAnything
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64180
+Successfully changed project path to: D:/Project/RollAnything
+D:/Project/RollAnything
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 42.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.0f1 (3721df5a8b28)
+[Subsystems] Discovering subsystems at path D:/Dev/Versions/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Project/RollAnything/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 SUPER (ID=0x1e81)
+    Vendor:   
+    VRAM:     8010 MB
+    Driver:   27.21.14.6079
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'D:/Dev/Versions/2020.2.0f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Dev/Versions/2020.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Dev/Versions/2020.2.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Dev/Versions/2020.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000914 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 40.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.832 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001865 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 44.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Rider] [Info] Rider plugin initialized. You may change the amount of Rider Debug output via Edit -> Preferences -> Rider -> Logging Level
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Plugins.Editor.JetBrains.RiderPlugin:Log (Plugins.Editor.JetBrains.RiderPlugin/LoggingLevel,string) (at Assets/Plugins/Editor/JetBrains/Unity3DRider.cs:292)
+Plugins.Editor.JetBrains.RiderPlugin:InitRiderPlugin () (at Assets/Plugins/Editor/JetBrains/Unity3DRider.cs:419)
+Plugins.Editor.JetBrains.RiderPlugin:.cctor () (at Assets/Plugins/Editor/JetBrains/Unity3DRider.cs:406)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Editor/JetBrains/Unity3DRider.cs Line: 292)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.743 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2657 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.3 MB.
+System memory in use after: 115.5 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 3084.
+Total: 2.529600 ms (FindLiveObjects: 0.489400 ms CreateObjectMapping: 0.089600 ms MarkObjects: 1.874200 ms  DeleteObjects: 0.075000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Study
+  artifactKey: Guid(34ec09a5d96812b49b42f02a51578ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Study using Guid(34ec09a5d96812b49b42f02a51578ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b10ac6861d572383f589a518c6ce09') in 0.011283 seconds
+  Import took 0.015680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/ForwardRenderer.asset
+  artifactKey: Guid(aff58c852629d5546aab53d00fc877cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ForwardRenderer.asset using Guid(aff58c852629d5546aab53d00fc877cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ad7c5ed3a0adb99df4a4b25fbb465c4') in 0.045408 seconds
+  Import took 0.048895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.617288 seconds.
+  path: Assets/RollTableExamples/Scenes
+  artifactKey: Guid(83c601c2dbe9c8542a1459fc4c6863f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RollTableExamples/Scenes using Guid(83c601c2dbe9c8542a1459fc4c6863f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '655cb39d12c64e36ca3f2c1af77b418a') in 0.007292 seconds
+  Import took 0.010838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.655664 seconds.
+  path: Assets/RollTableExamples/Scenes/ProjectTable.unity
+  artifactKey: Guid(7b1df1e409dc9a044a9fa89fd65d3f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RollTableExamples/Scenes/ProjectTable.unity using Guid(7b1df1e409dc9a044a9fa89fd65d3f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38675524bc28f5ebfa992a3a0c64a11c') in 0.007110 seconds
+  Import took 0.010643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.700744 seconds.
+  path: Assets/RollTableExamples/Scenes/SceneTable.unity
+  artifactKey: Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RollTableExamples/Scenes/SceneTable.unity using Guid(d1c3109bdb54ad54c8a2b2838528e640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0141240a696c791f5c1939fe54ac6fd4') in 0.007527 seconds
+  Import took 0.011098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.164992 seconds.
+  path: Assets/RollAnything/Scripts/RollTable.cs
+  artifactKey: Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RollAnything/Scripts/RollTable.cs using Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '703ae2a4f62562c1fa813885161d86db') in 0.015171 seconds
+  Import took 0.018838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007030 seconds.
+  path: Assets/RollAnything/Scripts/RollTable.cs
+  artifactKey: Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RollAnything/Scripts/RollTable.cs using Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '703ae2a4f62562c1fa813885161d86db') in 0.003079 seconds
+  Import took 0.006017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1827.139552 seconds.
+  path: Assets/RollAnything/Scripts/RollTable.cs
+  artifactKey: Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RollAnything/Scripts/RollTable.cs using Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee036b398bd522ab4fd5a68c9a360ae4') in 0.007443 seconds
+  Import took 0.011356 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002057 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Rider] [Info] Rider plugin initialized. You may change the amount of Rider Debug output via Edit -> Preferences -> Rider -> Logging Level
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Plugins.Editor.JetBrains.RiderPlugin:Log (Plugins.Editor.JetBrains.RiderPlugin/LoggingLevel,string) (at Assets/Plugins/Editor/JetBrains/Unity3DRider.cs:292)
+Plugins.Editor.JetBrains.RiderPlugin:InitRiderPlugin () (at Assets/Plugins/Editor/JetBrains/Unity3DRider.cs:419)
+Plugins.Editor.JetBrains.RiderPlugin:.cctor () (at Assets/Plugins/Editor/JetBrains/Unity3DRider.cs:406)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/Plugins/Editor/JetBrains/Unity3DRider.cs Line: 292)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.655 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2596 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 111.5 MB.
+System memory in use after: 111.7 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 3086.
+Total: 1.833200 ms (FindLiveObjects: 0.259700 ms CreateObjectMapping: 0.070400 ms MarkObjects: 1.485100 ms  DeleteObjects: 0.017300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 183.908721 seconds.
+  path: Assets/RollAnything/Scripts/RollTable.cs
+  artifactKey: Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RollAnything/Scripts/RollTable.cs using Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd47b74481ecc9ff2226f804b96d7ab') in 0.006571 seconds
+  Import took 0.010129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.793274 seconds.
+  path: Assets/RollAnything/Scripts/RollTable.cs
+  artifactKey: Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RollAnything/Scripts/RollTable.cs using Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c450cc828d95ecaed12940f749db757c') in 0.003434 seconds
+  Import took 0.006936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.734376 seconds.
+  path: Assets/RollAnything/Scripts/RollTable.cs
+  artifactKey: Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RollAnything/Scripts/RollTable.cs using Guid(ad694880327ec4a429391ca8155a8f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae9f2fd97fc1ff9f595b407d71b398f') in 0.003445 seconds
+  Import took 0.007070 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

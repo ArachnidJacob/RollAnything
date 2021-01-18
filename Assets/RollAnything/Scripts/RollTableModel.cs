@@ -56,7 +56,7 @@ public class RollTableModel : TreeModel<RollEntry>
 
     public RollEntry TestRoll()
     {
-        return LastRolled = TableRoll(new RollResult(), SafeRollEntries());
+        return LastRolled = TableRoll(SafeRollEntries());
     }
 
 
@@ -98,28 +98,6 @@ public class RollTableModel : TreeModel<RollEntry>
     public int IndexOfItem(RollEntry re)
     {
         return m_Data.IndexOf(re);
-    }
-
-
-    /// <summary>
-    /// Rolls for a type of object contained in the rollentries in the table, contains an out for the entry itself
-    /// </summary>
-    /// <param name="rollEntry">the entry rolled that contains the returned object</param>
-    /// <param name="previousRollResult"></param>
-    /// <param name="rollContext"> the list to roll against</param>
-    /// <param name="type"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public RollEntry TableRoll(RollResult rollResult, List<RollEntry> rollContext, Type type = null)
-    {
-        if (rollContext == null)
-        {
-            Debug.LogError("RollContext Cannot be null here");
-            return null;
-        }
-
-        _TableRoll(rollResult, rollContext, type);
-        return rollResult.FinalEntry();
     }
 
 
@@ -176,6 +154,8 @@ public class RollTableModel : TreeModel<RollEntry>
 
     public void RemoveObject(Object objectToRemove)
     {
+        if (objectToRemove == null)
+            return;
         var toRemove = SafeRollEntries().Where(re => re.HasObject(objectToRemove)).ToList();
 
         RemoveElements(toRemove);
@@ -193,23 +173,40 @@ public class RollTableModel : TreeModel<RollEntry>
     /// <summary>
     /// Base Rollentry roll, will filter against the input Type
     /// </summary>
-    /// <param name="rollResult">Record of the rolling, how many RollTables did we pass by, entries seleted, etc</param>
     /// <param name="rollContext">the list of entries to roll against</param>
     /// <param name="type">Filters the list by Type, affecting the roll chances</param>
+    /// <param name="rollFilter"></param>
+    /// <param name="rollResult">Record of the rolling, how many RollTables did we pass by, entries seleted, etc</param>
+    /// <param name="filteredEntry"></param>
     /// <returns>The Rollled entry</returns>
-    private RollEntry _TableRoll(RollResult rollResult, List<RollEntry> rollContext, Type type = null)
+    public RollEntry TableRoll(List<RollEntry> rollContext, Type type = null,
+        Func<RollEntry, bool> filteredEntry = null)
     {
-        List<RollEntry> safeRollContext = SafeRollEntries(rollContext);//Cleans the Root and other nulls from the list
+        if (rollContext == null)
+        {
+            Debug.LogError("RollContext Cannot be null in the model.");
+            return null;
+        }
+
+        List<RollEntry> safeRollContext = SafeRollEntries(rollContext); //Cleans the Root and other nulls from the list
         if (safeRollContext == null)
             return null;
-        
+
         //Filter by types
-        if (type != null)
+        if (type != null || filteredEntry != null)
         {
             List<RollEntry> filteredRollContext = new List<RollEntry>();
 
             foreach (RollEntry re in safeRollContext)
             {
+                if (filteredEntry != null)
+                    if (filteredEntry(re))
+                    {
+                        filteredRollContext.Add(re);
+                        continue;
+                    }
+
+                if (type == null) continue;
                 if (re.HasType(type))
                     filteredRollContext.Add(re);
             }
@@ -228,9 +225,7 @@ public class RollTableModel : TreeModel<RollEntry>
         if (safeRollContext.Count < 1) return null;
         if (safeRollContext.Count == 1)
         {
-            RollEntry firstObject = safeRollContext.First();
-            rollResult.AddEntry(firstObject);
-            return firstObject;
+            return safeRollContext.First();
         }
 
 
@@ -239,7 +234,7 @@ public class RollTableModel : TreeModel<RollEntry>
 
         _lastRoll = Random.Range(1, allWeight + 1);
         _currentWeight = 0;
-        
+
         for (int i = 0; i < safeRollContext.Count; i++)
         {
             RollEntry currentEntry = safeRollContext[i];
@@ -254,27 +249,11 @@ public class RollTableModel : TreeModel<RollEntry>
 //                    IncreaseGuarantee(rollContext);
 
             //Check to see if this Entry is a table
-            var reRollable = currentEntry.GetContainedClass<IReRollable>();
-       
+
+
             currentEntry.mDropTimes++;
-            //currentObject.totalResourcesSpent += currentObject.Value();
-            rollResult.AddEntry(currentEntry);
-            //It's a table
-            if (reRollable != null)
-            {
-                var nestedTable = reRollable.NestedTable;
- 
-                if (!rollResult.AddTable(nestedTable))
-                {               
-                    //If the result already has this, ignore (Prevents inifinite recursion)
-                    continue;
-                }
-                
-                //Roll in this new table, using it's context
-                nestedTable.Roll(rollResult, null, type);
-            }
-   
-            return rollResult.FinalEntry();
+
+            return currentEntry;
         }
 
         Debug.LogError("TableRoll Returned nothing, something went wrong (TableRoll:" + _lastRoll + ", CurrentWeight:" +

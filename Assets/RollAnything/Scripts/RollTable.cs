@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using UnityEditor;
-using UnityEditor.IMGUI.Controls;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
@@ -20,6 +16,7 @@ namespace RollAnything
         RollTable NestedTable { get; }
     }
 
+    /*
     /// <summary>
     /// Contains the aggregate results of a roll, including the path of the nested roll
     /// </summary>
@@ -86,7 +83,7 @@ namespace RollAnything
                 return null;
             return rolledEntries.Last();
         }
-    }
+    }*/
 
     [Serializable]
     public class RollTable
@@ -96,6 +93,8 @@ namespace RollAnything
         public bool expandedtable = false;
         private int _lastRoll;
         private int _currentWeight;
+
+        private List<RollTable> _parents = new List<RollTable>();
 
         List<RollEntry> RollEntries
         {
@@ -131,10 +130,10 @@ namespace RollAnything
             _rollEntries = new List<RollEntry> {new RollEntry(null, "Root", -1, 0, 0)};
         }
 
-        
+
         public RollEntry TestRoll()
         {
-            return _TableModel.TableRoll(new RollResult(this), _rollEntries);
+            return _TableModel.TableRoll(_rollEntries);
         }
 
         public void CalculateDropChance()
@@ -170,13 +169,11 @@ namespace RollAnything
         /// <param name="rollContext"></param>
         /// <param name="filterType"></param>
         /// <returns></returns>
-        public RollEntry Roll(RollResult rollResult = null, List<RollEntry> rollContext = null, Type filterType = null)
+        public RollEntry Roll(List<RollEntry> rollContext = null, Type filterType = null,  Func<RollEntry, bool> filter = null)
         {
-            if (rollResult == null)
-                rollResult = new RollResult(this);
             if (rollContext == null)
                 rollContext = RollEntries;
-            return _TableModel.TableRoll(rollResult, rollContext, filterType);
+            return _TableModel.TableRoll(rollContext, filterType);
         }
 
         /// <summary>
@@ -186,13 +183,11 @@ namespace RollAnything
         /// <param name="rollContext"></param>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        public T Roll<T>(RollResult rollResult = null, List<RollEntry> rollContext = null) where T : Object
+        public T Roll<T>(List<RollEntry> rollContext = null, Func<RollEntry, bool> filter = null) where T : Object
         {
-            if (rollResult == null)    
-                rollResult = new RollResult(this);
             if (rollContext == null)
                 rollContext = RollEntries;
-            return _TableModel.TableRoll(rollResult, rollContext, typeof(T)).GetContainedClass<T>();
+            return _TableModel.TableRoll(rollContext, typeof(T), filter).GetContainedClass<T>();
         }
 
         public void AddObjects(Object[] objects)

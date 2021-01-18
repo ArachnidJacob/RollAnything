@@ -1,84 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6c3b82f-1b5d-4104-80a2-8e4da20d67ab" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="b6c3b82f-1b5d-4104-80a2-8e4da20d67ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RollAnything/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RollAnything/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RollAnything/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RollAnything/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RollAnything/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RollAnything/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor-firstpass.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollEntry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollEntry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTableModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTableModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RollTableExamples/Scenes/SceneTable.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RollTableExamples/Scenes/SceneTable.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RollAnything.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RollAnything.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/77/93b3094c/EditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/cc/dfc49a81/BaseVisualElementPanel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/4b/e264322e/EditorGUILayout.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/62/ff2d3064/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/a9/466a8d95/SerializedObject.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/599589BF-4CE2-4890-9B8A-14CBE4A2034E/01/56d4f9e0/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollEntry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollInterfaces.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/4d/a2426316/InspectorElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/bd/127e84f1/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTableModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/TreeBaseClasses/TreeModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/9d/59a51a69/GenericInspector.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/95/94d80c1d/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTableView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollEntry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/5e/7403c5ab/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/2c/8c5c6554/RenderChain.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/ff/62dd2931/TreeViewItem.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/71/c05a35be/PropertyHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/5d/65e7af45/PropertyDrawer.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/96/9fc1e488/SearchField.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/d4/c6e3b0d3/UnityEvent`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/SpawnPoint.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/40/3dafdc5b/Panel.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/69/c791faed/EditorGUI.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/IntervalEventFire.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/e7/d49e9bc3/MultiColumnHeader.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/17/b5b0d8fe/Rect.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/fd/001cbc26/VisualTreeUpdater.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Study/SerializableSystemType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/9d/22ed3502/GUILayoutUtility.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/eb/b98d7e5d/DragAndDrop.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/Study/SpiderTools.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/16/c9bc97eb/EventDispatcherGate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/16/59f9e4c6/DragAndDropVisualMode.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/44/271db19e/UIRRepaintUpdater.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/95/d7575cf5/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/47/afd7afcb/List`1.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/2b/5fd6e448/SerializedProperty.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/56/a5a455ff/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/78/6cb867a1/TreeView.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/NestedZapper.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Study/RollTable/Entry.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/8c/dee0162a/CachedInvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/79/63973216/Component.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/1b/23ab6878/UnityEvent.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/52/8b5140bc/InvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/89/3cf309e5/UIRenderDevice.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FBB5ED17-EB6E-46C6-8000-0F8910EBB50C/2c/381756a4/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/57/55280e5b/RenderChainCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/ff/1ea89bd5/UIElementsUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Study/RollTable/Table.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/b4/2f3d0cf7/MouseCaptureDispatchingStrategy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/ff/e2460b8b/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/ea/9fcaaadf/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/08/6c710496/CallbackEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/a4/48b7bb26/TreeViewController.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/fb/87437901/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/0d/d664e206/PropertyDrawer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/29/c0eddacd/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5E35E458-9C19-48AA-8AF5-B8E64EEA8798/d7/0475d0af/Object.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AFBDFD00-7CCB-47E9-8566-943B0715A4F7/3f/3fa92625/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF28F193-EAB6-4E49-B44B-3FB27EAB4F75/90/6602269e/Array.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EDE85B10-691A-411F-AA23-9E6306258393/56/7718b1e5/GUILayout.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52C46852-ED47-49ED-9261-25CDA2005635/68/eb74fb6f/TreeViewGUI.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Study/RollTable/Entry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/2d/b5c7a08d/InvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTableView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Study/SerializableSystemType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FAC3A832-EC42-49A4-9C4D-A1051848DDE5/68/53be94e3/SerializedProperty.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/TreeBaseClasses/TreeModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Study/SpiderTools.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/NestedZapper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/IntervalEventFire.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/bd/23a6dfd8/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/SpawnPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E414E10B-FE5F-4572-9FF1-22F3359DE21B/fd/0e3a481a/CachedInvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollAnything/Scripts/RollInterfaces.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -120,56 +94,50 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RollAnything/TreeBaseClasses/TreeModel.cs" />
         <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollInterfaces.cs" />
         <option value="$PROJECT_DIR$/Assets/SpawnPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/NestedTable.cs" />
         <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/NestedTableComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/NestedZapper.cs" />
-        <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/Health.cs" />
-        <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollEntry.cs" />
         <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/IntervalEventFire.cs" />
-        <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTable.cs" />
         <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/TreeBaseClasses/TreeModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Study/RollTable/Entry.cs" />
         <option value="$PROJECT_DIR$/Assets/Study/SpiderTools.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTable.cs" />
         <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollTableModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/RollAnything/Scripts/RollEntry.cs" />
         <option value="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/Inspector/RollTablePropertyDrawer.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1TDpqU4PsH2RBubyx0ZWJ9NJ7WP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="8532">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="8532" />
-      <option name="userSelectedPid" value="false" />
+      <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="43616">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12948">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="43616" />
-      <option name="userSelectedPid" value="false" />
+      <option name="pid" value="12948" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
@@ -228,19 +196,64 @@
       <workItem from="1580067837870" duration="1774000" />
       <workItem from="1581978416072" duration="8244000" />
       <workItem from="1599252164787" duration="5516000" />
+      <workItem from="1610848208967" duration="1884000" />
+      <workItem from="1611000893722" duration="7688000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2517" height="519" key="GridCell.Tab.0.bottom" timestamp="1611006516062">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611006516062" />
+    <state width="2517" height="519" key="GridCell.Tab.0.center" timestamp="1611006516062">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611006516062" />
+    <state width="2517" height="519" key="GridCell.Tab.0.left" timestamp="1611006516062">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611006516062" />
+    <state width="2517" height="519" key="GridCell.Tab.0.right" timestamp="1611006516062">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611006516062" />
+    <state width="2517" height="519" key="GridCell.Tab.1.bottom" timestamp="1611006820167">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.1.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611006820167" />
+    <state width="2517" height="519" key="GridCell.Tab.1.center" timestamp="1611006820167">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.1.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611006820167" />
+    <state width="2517" height="519" key="GridCell.Tab.1.left" timestamp="1611006820167">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.1.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611006820167" />
+    <state width="2517" height="519" key="GridCell.Tab.1.right" timestamp="1611006820167">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="519" key="GridCell.Tab.1.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611006820167" />
+    <state x="1293" y="290" key="SettingsEditor" timestamp="1611007808531">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1293" y="290" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611007808531" />
+    <state x="923" y="433" width="714" height="534" key="find.popup" timestamp="1611001794352">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="923" y="433" width="714" height="534" key="find.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611001794352" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1611005298845">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1611005298845" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -255,26 +268,7 @@
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/RollAnything/RollEntry.cs" initialLine="70" />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs</url>
-          <line>57</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/RollTableExamples/Scripts/TableCoil.cs" initialLine="57">
-            <startOffsets>
-              <option value="1731" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1779" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <reveal-manager>
-      <revealed-members>
-        <RevealItemInfo typeName="RollAnything.RollResult" fieldName="rolledEntries" />
-        <RevealItemInfo typeName="UnityEngine.Events.UnityEvent" fieldName="m_PersistentCalls" />
-      </revealed-members>
-    </reveal-manager>
   </component>
 </project>

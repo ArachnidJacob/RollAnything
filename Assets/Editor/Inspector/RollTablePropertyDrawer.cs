@@ -16,8 +16,7 @@ namespace RollAnything
     {
         bool m_Initialized;
 
-        [SerializeField]
-        TreeViewState _treeViewState; // Serialized in the window layout file so it survives assembly reloading
+        [SerializeField] TreeViewState _treeViewState; // Serialized in the window layout file so it survives assembly reloading
 
         [SerializeField] MultiColumnHeaderState m_MultiColumnHeaderState;
 
@@ -108,8 +107,10 @@ namespace RollAnything
             if (data != null && arraySize == data.Count) return data;
 
             activeProperty.serializedObject.Update();
+
             data = new List<RollEntry>();
 
+            // needs this Root object to operate properly
             if (arraySize <= 0)
                 data.Add(new RollEntry(null, "Root", -1, 0, 0));
 
@@ -200,7 +201,6 @@ namespace RollAnything
                         if (change.changed)
                         {
                             EditorUtility.SetDirty(activeProperty.serializedObject.targetObject);
-                            //EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
                         }
                     }
 
@@ -257,6 +257,7 @@ namespace RollAnything
                 var selection = RollTableTreeView.GetSelection();
                 RollTableTreeView.treeModel.RemoveElements(selection);
             }
+
             return toolBarRect;
         }
 
@@ -294,11 +295,13 @@ namespace RollAnything
             {
                 RollTableTreeView.ExpandAll();
             }
+
             Rect collapseButtonRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 1);
             if (GUI.Button(collapseButtonRect, "Collapse All", style))
             {
                 RollTableTreeView.CollapseAll();
             }
+
             Rect propertyLabelRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 2);
             GUI.Label(propertyLabelRect, activeProperty.serializedObject.context != null
                 ? AssetDatabase.GetAssetPath(activeProperty.serializedObject.context)
@@ -310,6 +313,7 @@ namespace RollAnything
                 myColumnHeader.SetSortingColumns(new int[] {4, 3, 2}, new[] {true, false, true});
                 myColumnHeader.mode = MyMultiColumnHeader.Mode.LargeHeader;
             }
+
             Rect headerRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 5);
             GUI.Label(headerRect, "Header: ", "minilabel");
             Rect largeButtonRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 6);
@@ -318,23 +322,27 @@ namespace RollAnything
                 var myColumnHeader = (MyMultiColumnHeader) RollTableTreeView.multiColumnHeader;
                 myColumnHeader.mode = MyMultiColumnHeader.Mode.LargeHeader;
             }
+
             Rect mediumButtonRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 7);
             if (GUI.Button(mediumButtonRect, "Default", style))
             {
                 var myColumnHeader = (MyMultiColumnHeader) RollTableTreeView.multiColumnHeader;
                 myColumnHeader.mode = MyMultiColumnHeader.Mode.DefaultHeader;
             }
+
             Rect smallButtonRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 8);
             if (GUI.Button(smallButtonRect, "No sort", style))
             {
                 var myColumnHeader = (MyMultiColumnHeader) RollTableTreeView.multiColumnHeader;
                 myColumnHeader.mode = MyMultiColumnHeader.Mode.MinimumHeaderWithoutSorting;
             }
+
             Rect valueControlRect = DivideRectHorizontal(bottomToolbar, buttonDivision, 9);
             if (GUI.Button(valueControlRect, "values <-> controls", style))
             {
                 RollTableTreeView.showControls = !RollTableTreeView.showControls;
             }
+
             return bottomToolbar;
         }
     }

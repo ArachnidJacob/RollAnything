@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System;
 using System.Linq;
+using NUnit.Framework;
 using RollAnything.TreeBaseClasses;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -27,14 +28,12 @@ namespace RollAnything
             m_Depth = depth;
             m_ID = id;
             this.weight = weight;
+            //TODO Notion of storing entry parent legacy
             //   m_GuaranteeBonus = guaranteeBonus;
         }
 
 
-        public int TotalWeight
-        {
-            get { return weight; }
-        }
+        public int TotalWeight => weight;
 
         public void SetLocalDropChance(int localContextWeight)
         {
@@ -140,15 +139,15 @@ namespace RollAnything
         /// <returns></returns>
         public T GetContainedClass<T>() where T : class
         {
-            Type storedType = myObject.GetType();
-            Type checkingType = typeof(T);
+            var storedType = myObject.GetType();
+            var checkingType = typeof(T);
 
             if (storedType == checkingType)
                 return myObject as T;
-           
+
 
             //TODO ADD HANDLER FOR INTERFACES
-            if (checkingType == typeof(Component)||checkingType.IsInterface)
+            if (checkingType == typeof(Component) || checkingType.IsInterface)
             {
                 if (storedType == typeof(GameObject))
                 {
@@ -158,8 +157,9 @@ namespace RollAnything
                     {
                         return rolledGameObjectComponent;
                     }
-                } 
-                if(storedType == typeof(Component))
+                }
+
+                if (storedType == typeof(Component))
                 {
                     Component rolledGameObject = (Component) myObject;
                     var rolledGameObjectComponent = rolledGameObject.GetComponent<T>();
@@ -169,6 +169,7 @@ namespace RollAnything
                     }
                 }
             }
+
             return myObject as T;
         }
 

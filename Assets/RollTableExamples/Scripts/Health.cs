@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace RollTableExamples
@@ -6,6 +7,7 @@ namespace RollTableExamples
     public enum DamageResult
     {
         Hit,
+        Ignored,
         Dead
     }
 
@@ -19,21 +21,43 @@ namespace RollTableExamples
         [SerializeField] private float maxHealth = 10;
         float health = 10;
 
+        [SerializeField] private float damageCD = 0.1f;
+        private float damageCDCount = 0;
+        public bool RecentlyDamaged { get; private set; }
+
         public UnityEvent onDamaged;
         public UnityEvent onDead;
 
-        public void Start()
+        void Start()
         {
             Reset();
+        }
+
+        private void Update()
+        {
+            if (!RecentlyDamaged)
+                return;
+            if (damageCDCount < damageCD)
+            {
+                damageCDCount += Time.deltaTime;
+                return;
+            }
+
+            damageCDCount = 0;
+            RecentlyDamaged = false;
         }
 
         void Reset()
         {
             health = maxHealth;
+            damageCDCount = 0;
+            RecentlyDamaged = false;
         }
 
         public DamageResult Damage(float damageAmount = 1)
         {
+            if (RecentlyDamaged)
+                return DamageResult.Ignored;
             health -= damageAmount;
             onDamaged.Invoke();
             if (health <= 0)
